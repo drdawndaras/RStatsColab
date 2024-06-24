@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "324f3551",
+   "id": "3f186bb1",
    "metadata": {
     "_execution_state": "idle",
     "_uuid": "051d70d956493feee0c6d64651c6a088724dca2a",
     "execution": {
-     "iopub.execute_input": "2024-06-24T22:33:34.380625Z",
-     "iopub.status.busy": "2024-06-24T22:33:34.378333Z",
-     "iopub.status.idle": "2024-06-24T22:33:35.515760Z",
-     "shell.execute_reply": "2024-06-24T22:33:35.513923Z"
+     "iopub.execute_input": "2024-06-24T23:31:28.058958Z",
+     "iopub.status.busy": "2024-06-24T23:31:28.054333Z",
+     "iopub.status.idle": "2024-06-24T23:31:29.393903Z",
+     "shell.execute_reply": "2024-06-24T23:31:29.391892Z"
     },
     "papermill": {
-     "duration": 1.154184,
-     "end_time": "2024-06-24T22:33:35.518190",
+     "duration": 1.363805,
+     "end_time": "2024-06-24T23:31:29.397383",
      "exception": false,
-     "start_time": "2024-06-24T22:33:34.364006",
+     "start_time": "2024-06-24T23:31:28.033578",
      "status": "completed"
     },
     "tags": []
@@ -75,19 +75,207 @@
    ]
   },
   {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "7ed6c794",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-24T23:31:29.466463Z",
+     "iopub.status.busy": "2024-06-24T23:31:29.431167Z",
+     "iopub.status.idle": "2024-06-24T23:31:34.375061Z",
+     "shell.execute_reply": "2024-06-24T23:31:34.372815Z"
+    },
+    "papermill": {
+     "duration": 4.964946,
+     "end_time": "2024-06-24T23:31:34.378214",
+     "exception": false,
+     "start_time": "2024-06-24T23:31:29.413268",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Loading required package: lattice\n",
+      "\n",
+      "\n",
+      "Attaching package: ‘caret’\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:purrr’:\n",
+      "\n",
+      "    lift\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:httr’:\n",
+      "\n",
+      "    progress\n",
+      "\n",
+      "\n",
+      "corrplot 0.92 loaded\n",
+      "\n",
+      "NOTE: Either Arial Narrow or Roboto Condensed fonts are required to use these themes.\n",
+      "\n",
+      "      Please use hrbrthemes::import_roboto_condensed() to install Roboto Condensed and\n",
+      "\n",
+      "      if Arial Narrow is not on your system, please see https://bit.ly/arialnarrow\n",
+      "\n",
+      "\n",
+      "Attaching package: ‘formattable’\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:bigrquery’:\n",
+      "\n",
+      "    format_table\n",
+      "\n",
+      "\n",
+      "\n",
+      "Attaching package: ‘data.table’\n",
+      "\n",
+      "\n",
+      "The following objects are masked from ‘package:lubridate’:\n",
+      "\n",
+      "    hour, isoweek, mday, minute, month, quarter, second, wday, week,\n",
+      "    yday, year\n",
+      "\n",
+      "\n",
+      "The following objects are masked from ‘package:dplyr’:\n",
+      "\n",
+      "    between, first, last\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:purrr’:\n",
+      "\n",
+      "    transpose\n",
+      "\n",
+      "\n",
+      "Loading required package: Matrix\n",
+      "\n",
+      "\n",
+      "Attaching package: ‘Matrix’\n",
+      "\n",
+      "\n",
+      "The following objects are masked from ‘package:tidyr’:\n",
+      "\n",
+      "    expand, pack, unpack\n",
+      "\n",
+      "\n",
+      "\n",
+      "Attaching package: ‘arules’\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:dplyr’:\n",
+      "\n",
+      "    recode\n",
+      "\n",
+      "\n",
+      "The following objects are masked from ‘package:base’:\n",
+      "\n",
+      "    abbreviate, write\n",
+      "\n",
+      "\n",
+      "------------------------------------------------------------------------------\n",
+      "\n",
+      "You have loaded plyr after dplyr - this is likely to cause problems.\n",
+      "If you need functions from both plyr and dplyr, please load plyr first, then dplyr:\n",
+      "library(plyr); library(dplyr)\n",
+      "\n",
+      "------------------------------------------------------------------------------\n",
+      "\n",
+      "\n",
+      "Attaching package: ‘plyr’\n",
+      "\n",
+      "\n",
+      "The following objects are masked from ‘package:dplyr’:\n",
+      "\n",
+      "    arrange, count, desc, failwith, id, mutate, rename, summarise,\n",
+      "    summarize\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:purrr’:\n",
+      "\n",
+      "    compact\n",
+      "\n",
+      "\n",
+      "\n",
+      "Attaching package: ‘plotly’\n",
+      "\n",
+      "\n",
+      "The following objects are masked from ‘package:plyr’:\n",
+      "\n",
+      "    arrange, mutate, rename, summarise\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:formattable’:\n",
+      "\n",
+      "    style\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:ggplot2’:\n",
+      "\n",
+      "    last_plot\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:stats’:\n",
+      "\n",
+      "    filter\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:graphics’:\n",
+      "\n",
+      "    layout\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:httr’:\n",
+      "\n",
+      "    config\n",
+      "\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "library(dplyr) # for data manipulation\n",
+    "library(stringr) # for data manipulation\n",
+    "library(caret) # for sampling\n",
+    "library(caTools) # for train/test split\n",
+    "library(ggplot2) # for data visualization\n",
+    "library(corrplot) # for correlations\n",
+    "library(Rtsne) # for tsne plotting\n",
+    "library(ggplot2)\n",
+    "library(repr)\n",
+    "library(RColorBrewer)\n",
+    "library(tidyr)\n",
+    "library(tidyverse)\n",
+    "library(lubridate)\n",
+    "library(hrbrthemes)\n",
+    "library(formattable)\n",
+    "library(data.table)\n",
+    "library(arules)\n",
+    "library(arulesViz)\n",
+    "library(plyr)\n",
+    "library(IRdisplay)\n",
+    "library(plotly)\n",
+    "library(gtools)"
+   ]
+  },
+  {
    "attachments": {
     "7ad7fe01-28b6-4f85-9274-aeb8eb5f8383.png": {
      "image/png": "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rSH48y1UfjOB6MIc4vlS7VMOtIwQ0/1ZOCN5OGe6ZYzdcE7GinEM0aHFwJKIiIiIiGoXWdiVMsKLSwj+dBPhp7OIri7L3Ot7pxwoBaQdqcfuTEO3p6GHc3Ce7ILzWDt0VwYq67Fr9COAgSUREREREdWn2qV6qYzo2grCT2cQfj0Pu1CSLudGASkjqfPtKZjhApzxAvRA7naTr5TDvh6PEAaWRERERES0MxZySrkeSBPKpTLsSkVGEeW9pC7bgUoZwHdk4gCDyUcSA0siIiIiImqctVK/HVlYBSijAQ024vmOYGBJREREREREDWGVLBERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNYSBJRERERERETWEgSURERERERE1hIElERERERERNeT/A/m5pw/TDDwHAAAAAElFTkSuQmCC"
     }
    },
    "cell_type": "markdown",
-   "id": "0c26c555",
+   "id": "6231bbcc",
    "metadata": {
     "papermill": {
-     "duration": 0.011401,
-     "end_time": "2024-06-24T22:33:35.541441",
+     "duration": 0.018094,
+     "end_time": "2024-06-24T23:31:34.413948",
      "exception": false,
-     "start_time": "2024-06-24T22:33:35.530040",
+     "start_time": "2024-06-24T23:31:34.395854",
      "status": "completed"
     },
     "tags": []
@@ -103,13 +291,13 @@
     }
    },
    "cell_type": "markdown",
-   "id": "119bf5a7",
+   "id": "71c2c7f7",
    "metadata": {
     "papermill": {
-     "duration": 0.010704,
-     "end_time": "2024-06-24T22:33:35.562883",
+     "duration": 0.018052,
+     "end_time": "2024-06-24T23:31:34.450432",
      "exception": false,
-     "start_time": "2024-06-24T22:33:35.552179",
+     "start_time": "2024-06-24T23:31:34.432380",
      "status": "completed"
     },
     "tags": []
@@ -120,13 +308,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "9d788f9b",
+   "id": "f3e83b44",
    "metadata": {
     "papermill": {
-     "duration": 0.010703,
-     "end_time": "2024-06-24T22:33:35.584471",
+     "duration": 0.018531,
+     "end_time": "2024-06-24T23:31:34.487233",
      "exception": false,
-     "start_time": "2024-06-24T22:33:35.573768",
+     "start_time": "2024-06-24T23:31:34.468702",
      "status": "completed"
     },
     "tags": []
@@ -138,13 +326,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "789244ef",
+   "id": "2dadb8a8",
    "metadata": {
     "papermill": {
-     "duration": 0.010533,
-     "end_time": "2024-06-24T22:33:35.605660",
+     "duration": 0.018217,
+     "end_time": "2024-06-24T23:31:34.525063",
      "exception": false,
-     "start_time": "2024-06-24T22:33:35.595127",
+     "start_time": "2024-06-24T23:31:34.506846",
      "status": "completed"
     },
     "tags": []
@@ -155,20 +343,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 2,
-   "id": "93f8eced",
+   "execution_count": 3,
+   "id": "1f34d701",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T22:33:35.659461Z",
-     "iopub.status.busy": "2024-06-24T22:33:35.628960Z",
-     "iopub.status.idle": "2024-06-24T22:33:35.675577Z",
-     "shell.execute_reply": "2024-06-24T22:33:35.673849Z"
+     "iopub.execute_input": "2024-06-24T23:31:34.565956Z",
+     "iopub.status.busy": "2024-06-24T23:31:34.563980Z",
+     "iopub.status.idle": "2024-06-24T23:31:34.586138Z",
+     "shell.execute_reply": "2024-06-24T23:31:34.584110Z"
     },
     "papermill": {
-     "duration": 0.061711,
-     "end_time": "2024-06-24T22:33:35.677931",
+     "duration": 0.04621,
+     "end_time": "2024-06-24T23:31:34.589053",
      "exception": false,
-     "start_time": "2024-06-24T22:33:35.616220",
+     "start_time": "2024-06-24T23:31:34.542843",
      "status": "completed"
     },
     "tags": []
@@ -199,20 +387,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
-   "id": "90822ccd",
+   "execution_count": 4,
+   "id": "28eec9e1",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T22:33:35.703464Z",
-     "iopub.status.busy": "2024-06-24T22:33:35.701851Z",
-     "iopub.status.idle": "2024-06-24T22:33:35.731939Z",
-     "shell.execute_reply": "2024-06-24T22:33:35.730180Z"
+     "iopub.execute_input": "2024-06-24T23:31:34.629583Z",
+     "iopub.status.busy": "2024-06-24T23:31:34.627705Z",
+     "iopub.status.idle": "2024-06-24T23:31:34.663686Z",
+     "shell.execute_reply": "2024-06-24T23:31:34.661493Z"
     },
     "papermill": {
-     "duration": 0.045389,
-     "end_time": "2024-06-24T22:33:35.734250",
+     "duration": 0.059727,
+     "end_time": "2024-06-24T23:31:34.666592",
      "exception": false,
-     "start_time": "2024-06-24T22:33:35.688861",
+     "start_time": "2024-06-24T23:31:34.606865",
      "status": "completed"
     },
     "tags": []
@@ -276,20 +464,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 4,
-   "id": "fe71ddfd",
+   "execution_count": 5,
+   "id": "1d70f34c",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T22:33:35.760016Z",
-     "iopub.status.busy": "2024-06-24T22:33:35.758445Z",
-     "iopub.status.idle": "2024-06-24T22:33:37.573686Z",
-     "shell.execute_reply": "2024-06-24T22:33:37.570774Z"
+     "iopub.execute_input": "2024-06-24T23:31:34.709307Z",
+     "iopub.status.busy": "2024-06-24T23:31:34.707428Z",
+     "iopub.status.idle": "2024-06-24T23:31:36.590135Z",
+     "shell.execute_reply": "2024-06-24T23:31:36.588104Z"
     },
     "papermill": {
-     "duration": 1.832266,
-     "end_time": "2024-06-24T22:33:37.577606",
+     "duration": 1.907257,
+     "end_time": "2024-06-24T23:31:36.593393",
      "exception": false,
-     "start_time": "2024-06-24T22:33:35.745340",
+     "start_time": "2024-06-24T23:31:34.686136",
      "status": "completed"
     },
     "tags": []
@@ -479,20 +667,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
-   "id": "2053605c",
+   "execution_count": 6,
+   "id": "5ff67cdf",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T22:33:37.607618Z",
-     "iopub.status.busy": "2024-06-24T22:33:37.606078Z",
-     "iopub.status.idle": "2024-06-24T22:33:38.404867Z",
-     "shell.execute_reply": "2024-06-24T22:33:38.403013Z"
+     "iopub.execute_input": "2024-06-24T23:31:36.639048Z",
+     "iopub.status.busy": "2024-06-24T23:31:36.637237Z",
+     "iopub.status.idle": "2024-06-24T23:31:37.544303Z",
+     "shell.execute_reply": "2024-06-24T23:31:37.541213Z"
     },
     "papermill": {
-     "duration": 0.816246,
-     "end_time": "2024-06-24T22:33:38.407234",
+     "duration": 0.933484,
+     "end_time": "2024-06-24T23:31:37.547867",
      "exception": false,
-     "start_time": "2024-06-24T22:33:37.590988",
+     "start_time": "2024-06-24T23:31:36.614383",
      "status": "completed"
     },
     "tags": []
@@ -660,13 +848,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "d3439950",
+   "id": "44b0745f",
    "metadata": {
     "papermill": {
-     "duration": 0.013151,
-     "end_time": "2024-06-24T22:33:38.434400",
+     "duration": 0.020538,
+     "end_time": "2024-06-24T23:31:37.589637",
      "exception": false,
-     "start_time": "2024-06-24T22:33:38.421249",
+     "start_time": "2024-06-24T23:31:37.569099",
      "status": "completed"
     },
     "tags": []
@@ -674,6 +862,896 @@
    "source": [
     "# - [Data Cleaning](#data)"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "66c9966d",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-24T23:31:37.634661Z",
+     "iopub.status.busy": "2024-06-24T23:31:37.632509Z",
+     "iopub.status.idle": "2024-06-24T23:31:37.656720Z",
+     "shell.execute_reply": "2024-06-24T23:31:37.653904Z"
+    },
+    "papermill": {
+     "duration": 0.050962,
+     "end_time": "2024-06-24T23:31:37.660785",
+     "exception": false,
+     "start_time": "2024-06-24T23:31:37.609823",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<style>\n",
+       ".list-inline {list-style: none; margin:0; padding: 0}\n",
+       ".list-inline>li {display: inline-block}\n",
+       ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+       "</style>\n",
+       "<ol class=list-inline><li>'id'</li><li>'dateAdded'</li><li>'dateUpdated'</li><li>'asins'</li><li>'brand'</li><li>'categories'</li><li>'primaryCategories'</li><li>'colors'</li><li>'dimension'</li><li>'ean'</li><li>'imageURLs'</li><li>'keys'</li><li>'manufacturer'</li><li>'manufacturerNumber'</li><li>'name'</li><li>'prices.amountMax'</li><li>'prices.amountMin'</li><li>'prices.availability'</li><li>'prices.color'</li><li>'prices.condition'</li><li>'prices.currency'</li><li>'prices.dateAdded'</li><li>'prices.dateSeen'</li><li>'prices.isSale'</li><li>'prices.merchant'</li><li>'prices.offer'</li><li>'prices.returnPolicy'</li><li>'prices.shipping'</li><li>'prices.size'</li><li>'prices.sourceURLs'</li><li>'sizes'</li><li>'sourceURLs'</li><li>'upc'</li><li>'weight'</li></ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 'id'\n",
+       "\\item 'dateAdded'\n",
+       "\\item 'dateUpdated'\n",
+       "\\item 'asins'\n",
+       "\\item 'brand'\n",
+       "\\item 'categories'\n",
+       "\\item 'primaryCategories'\n",
+       "\\item 'colors'\n",
+       "\\item 'dimension'\n",
+       "\\item 'ean'\n",
+       "\\item 'imageURLs'\n",
+       "\\item 'keys'\n",
+       "\\item 'manufacturer'\n",
+       "\\item 'manufacturerNumber'\n",
+       "\\item 'name'\n",
+       "\\item 'prices.amountMax'\n",
+       "\\item 'prices.amountMin'\n",
+       "\\item 'prices.availability'\n",
+       "\\item 'prices.color'\n",
+       "\\item 'prices.condition'\n",
+       "\\item 'prices.currency'\n",
+       "\\item 'prices.dateAdded'\n",
+       "\\item 'prices.dateSeen'\n",
+       "\\item 'prices.isSale'\n",
+       "\\item 'prices.merchant'\n",
+       "\\item 'prices.offer'\n",
+       "\\item 'prices.returnPolicy'\n",
+       "\\item 'prices.shipping'\n",
+       "\\item 'prices.size'\n",
+       "\\item 'prices.sourceURLs'\n",
+       "\\item 'sizes'\n",
+       "\\item 'sourceURLs'\n",
+       "\\item 'upc'\n",
+       "\\item 'weight'\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 'id'\n",
+       "2. 'dateAdded'\n",
+       "3. 'dateUpdated'\n",
+       "4. 'asins'\n",
+       "5. 'brand'\n",
+       "6. 'categories'\n",
+       "7. 'primaryCategories'\n",
+       "8. 'colors'\n",
+       "9. 'dimension'\n",
+       "10. 'ean'\n",
+       "11. 'imageURLs'\n",
+       "12. 'keys'\n",
+       "13. 'manufacturer'\n",
+       "14. 'manufacturerNumber'\n",
+       "15. 'name'\n",
+       "16. 'prices.amountMax'\n",
+       "17. 'prices.amountMin'\n",
+       "18. 'prices.availability'\n",
+       "19. 'prices.color'\n",
+       "20. 'prices.condition'\n",
+       "21. 'prices.currency'\n",
+       "22. 'prices.dateAdded'\n",
+       "23. 'prices.dateSeen'\n",
+       "24. 'prices.isSale'\n",
+       "25. 'prices.merchant'\n",
+       "26. 'prices.offer'\n",
+       "27. 'prices.returnPolicy'\n",
+       "28. 'prices.shipping'\n",
+       "29. 'prices.size'\n",
+       "30. 'prices.sourceURLs'\n",
+       "31. 'sizes'\n",
+       "32. 'sourceURLs'\n",
+       "33. 'upc'\n",
+       "34. 'weight'\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       " [1] \"id\"                  \"dateAdded\"           \"dateUpdated\"        \n",
+       " [4] \"asins\"               \"brand\"               \"categories\"         \n",
+       " [7] \"primaryCategories\"   \"colors\"              \"dimension\"          \n",
+       "[10] \"ean\"                 \"imageURLs\"           \"keys\"               \n",
+       "[13] \"manufacturer\"        \"manufacturerNumber\"  \"name\"               \n",
+       "[16] \"prices.amountMax\"    \"prices.amountMin\"    \"prices.availability\"\n",
+       "[19] \"prices.color\"        \"prices.condition\"    \"prices.currency\"    \n",
+       "[22] \"prices.dateAdded\"    \"prices.dateSeen\"     \"prices.isSale\"      \n",
+       "[25] \"prices.merchant\"     \"prices.offer\"        \"prices.returnPolicy\"\n",
+       "[28] \"prices.shipping\"     \"prices.size\"         \"prices.sourceURLs\"  \n",
+       "[31] \"sizes\"               \"sourceURLs\"          \"upc\"                \n",
+       "[34] \"weight\"             "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "colnames(df1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "74a91b73",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-24T23:31:37.707393Z",
+     "iopub.status.busy": "2024-06-24T23:31:37.705556Z",
+     "iopub.status.idle": "2024-06-24T23:31:37.728099Z",
+     "shell.execute_reply": "2024-06-24T23:31:37.725486Z"
+    },
+    "papermill": {
+     "duration": 0.050199,
+     "end_time": "2024-06-24T23:31:37.731963",
+     "exception": false,
+     "start_time": "2024-06-24T23:31:37.681764",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<style>\n",
+       ".list-inline {list-style: none; margin:0; padding: 0}\n",
+       ".list-inline>li {display: inline-block}\n",
+       ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+       "</style>\n",
+       "<ol class=list-inline><li>'id'</li><li>'dateAdded'</li><li>'dateUpdated'</li><li>'asins'</li><li>'brand'</li><li>'categories'</li><li>'primaryCategories'</li><li>'colors'</li><li>'dimension'</li><li>'ean...upc'</li><li>'imageURLs'</li><li>'keys'</li><li>'manufacturer'</li><li>'manufacturerNumber'</li><li>'name'</li><li>'prices.amountMax'</li><li>'prices.amountMin'</li><li>'prices.availability'</li><li>'prices.color'</li><li>'prices.condition'</li><li>'prices.currency'</li><li>'prices.dateAdded'</li><li>'prices.dateSeen'</li><li>'prices.isSale'</li><li>'prices.merchant'</li><li>'prices.offer'</li><li>'prices.returnPolicy'</li><li>'prices.shipping'</li><li>'prices.size'</li><li>'prices.sourceURLs'</li><li>'sizes'</li><li>'sourceURLs'</li></ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 'id'\n",
+       "\\item 'dateAdded'\n",
+       "\\item 'dateUpdated'\n",
+       "\\item 'asins'\n",
+       "\\item 'brand'\n",
+       "\\item 'categories'\n",
+       "\\item 'primaryCategories'\n",
+       "\\item 'colors'\n",
+       "\\item 'dimension'\n",
+       "\\item 'ean...upc'\n",
+       "\\item 'imageURLs'\n",
+       "\\item 'keys'\n",
+       "\\item 'manufacturer'\n",
+       "\\item 'manufacturerNumber'\n",
+       "\\item 'name'\n",
+       "\\item 'prices.amountMax'\n",
+       "\\item 'prices.amountMin'\n",
+       "\\item 'prices.availability'\n",
+       "\\item 'prices.color'\n",
+       "\\item 'prices.condition'\n",
+       "\\item 'prices.currency'\n",
+       "\\item 'prices.dateAdded'\n",
+       "\\item 'prices.dateSeen'\n",
+       "\\item 'prices.isSale'\n",
+       "\\item 'prices.merchant'\n",
+       "\\item 'prices.offer'\n",
+       "\\item 'prices.returnPolicy'\n",
+       "\\item 'prices.shipping'\n",
+       "\\item 'prices.size'\n",
+       "\\item 'prices.sourceURLs'\n",
+       "\\item 'sizes'\n",
+       "\\item 'sourceURLs'\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 'id'\n",
+       "2. 'dateAdded'\n",
+       "3. 'dateUpdated'\n",
+       "4. 'asins'\n",
+       "5. 'brand'\n",
+       "6. 'categories'\n",
+       "7. 'primaryCategories'\n",
+       "8. 'colors'\n",
+       "9. 'dimension'\n",
+       "10. 'ean...upc'\n",
+       "11. 'imageURLs'\n",
+       "12. 'keys'\n",
+       "13. 'manufacturer'\n",
+       "14. 'manufacturerNumber'\n",
+       "15. 'name'\n",
+       "16. 'prices.amountMax'\n",
+       "17. 'prices.amountMin'\n",
+       "18. 'prices.availability'\n",
+       "19. 'prices.color'\n",
+       "20. 'prices.condition'\n",
+       "21. 'prices.currency'\n",
+       "22. 'prices.dateAdded'\n",
+       "23. 'prices.dateSeen'\n",
+       "24. 'prices.isSale'\n",
+       "25. 'prices.merchant'\n",
+       "26. 'prices.offer'\n",
+       "27. 'prices.returnPolicy'\n",
+       "28. 'prices.shipping'\n",
+       "29. 'prices.size'\n",
+       "30. 'prices.sourceURLs'\n",
+       "31. 'sizes'\n",
+       "32. 'sourceURLs'\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       " [1] \"id\"                  \"dateAdded\"           \"dateUpdated\"        \n",
+       " [4] \"asins\"               \"brand\"               \"categories\"         \n",
+       " [7] \"primaryCategories\"   \"colors\"              \"dimension\"          \n",
+       "[10] \"ean...upc\"           \"imageURLs\"           \"keys\"               \n",
+       "[13] \"manufacturer\"        \"manufacturerNumber\"  \"name\"               \n",
+       "[16] \"prices.amountMax\"    \"prices.amountMin\"    \"prices.availability\"\n",
+       "[19] \"prices.color\"        \"prices.condition\"    \"prices.currency\"    \n",
+       "[22] \"prices.dateAdded\"    \"prices.dateSeen\"     \"prices.isSale\"      \n",
+       "[25] \"prices.merchant\"     \"prices.offer\"        \"prices.returnPolicy\"\n",
+       "[28] \"prices.shipping\"     \"prices.size\"         \"prices.sourceURLs\"  \n",
+       "[31] \"sizes\"               \"sourceURLs\"         "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "colnames(df2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "2c5821e1",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-24T23:31:37.778921Z",
+     "iopub.status.busy": "2024-06-24T23:31:37.777121Z",
+     "iopub.status.idle": "2024-06-24T23:31:37.795674Z",
+     "shell.execute_reply": "2024-06-24T23:31:37.793600Z"
+    },
+    "papermill": {
+     "duration": 0.045789,
+     "end_time": "2024-06-24T23:31:37.799343",
+     "exception": false,
+     "start_time": "2024-06-24T23:31:37.753554",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Rename column where names is \"Sepal.Length\"\n",
+    "names(df2)[names(df2) == \"ean...upc\"] <- \"ean\"\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "9a03d800",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-24T23:31:37.846445Z",
+     "iopub.status.busy": "2024-06-24T23:31:37.844542Z",
+     "iopub.status.idle": "2024-06-24T23:31:37.891259Z",
+     "shell.execute_reply": "2024-06-24T23:31:37.888645Z"
+    },
+    "papermill": {
+     "duration": 0.074077,
+     "end_time": "2024-06-24T23:31:37.894784",
+     "exception": false,
+     "start_time": "2024-06-24T23:31:37.820707",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<style>\n",
+       ".list-inline {list-style: none; margin:0; padding: 0}\n",
+       ".list-inline>li {display: inline-block}\n",
+       ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+       "</style>\n",
+       "<ol class=list-inline><li>'id'</li><li>'dateAdded'</li><li>'dateUpdated'</li><li>'asins'</li><li>'brand'</li><li>'categories'</li><li>'primaryCategories'</li><li>'colors'</li><li>'dimension'</li><li>'ean'</li><li>'imageURLs'</li><li>'keys'</li><li>'manufacturer'</li><li>'manufacturerNumber'</li><li>'name'</li><li>'prices.amountMax'</li><li>'prices.amountMin'</li><li>'prices.availability'</li><li>'prices.color'</li><li>'prices.condition'</li><li>'prices.currency'</li><li>'prices.dateAdded'</li><li>'prices.dateSeen'</li><li>'prices.isSale'</li><li>'prices.merchant'</li><li>'prices.offer'</li><li>'prices.returnPolicy'</li><li>'prices.shipping'</li><li>'prices.size'</li><li>'prices.sourceURLs'</li><li>'sizes'</li><li>'sourceURLs'</li></ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 'id'\n",
+       "\\item 'dateAdded'\n",
+       "\\item 'dateUpdated'\n",
+       "\\item 'asins'\n",
+       "\\item 'brand'\n",
+       "\\item 'categories'\n",
+       "\\item 'primaryCategories'\n",
+       "\\item 'colors'\n",
+       "\\item 'dimension'\n",
+       "\\item 'ean'\n",
+       "\\item 'imageURLs'\n",
+       "\\item 'keys'\n",
+       "\\item 'manufacturer'\n",
+       "\\item 'manufacturerNumber'\n",
+       "\\item 'name'\n",
+       "\\item 'prices.amountMax'\n",
+       "\\item 'prices.amountMin'\n",
+       "\\item 'prices.availability'\n",
+       "\\item 'prices.color'\n",
+       "\\item 'prices.condition'\n",
+       "\\item 'prices.currency'\n",
+       "\\item 'prices.dateAdded'\n",
+       "\\item 'prices.dateSeen'\n",
+       "\\item 'prices.isSale'\n",
+       "\\item 'prices.merchant'\n",
+       "\\item 'prices.offer'\n",
+       "\\item 'prices.returnPolicy'\n",
+       "\\item 'prices.shipping'\n",
+       "\\item 'prices.size'\n",
+       "\\item 'prices.sourceURLs'\n",
+       "\\item 'sizes'\n",
+       "\\item 'sourceURLs'\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 'id'\n",
+       "2. 'dateAdded'\n",
+       "3. 'dateUpdated'\n",
+       "4. 'asins'\n",
+       "5. 'brand'\n",
+       "6. 'categories'\n",
+       "7. 'primaryCategories'\n",
+       "8. 'colors'\n",
+       "9. 'dimension'\n",
+       "10. 'ean'\n",
+       "11. 'imageURLs'\n",
+       "12. 'keys'\n",
+       "13. 'manufacturer'\n",
+       "14. 'manufacturerNumber'\n",
+       "15. 'name'\n",
+       "16. 'prices.amountMax'\n",
+       "17. 'prices.amountMin'\n",
+       "18. 'prices.availability'\n",
+       "19. 'prices.color'\n",
+       "20. 'prices.condition'\n",
+       "21. 'prices.currency'\n",
+       "22. 'prices.dateAdded'\n",
+       "23. 'prices.dateSeen'\n",
+       "24. 'prices.isSale'\n",
+       "25. 'prices.merchant'\n",
+       "26. 'prices.offer'\n",
+       "27. 'prices.returnPolicy'\n",
+       "28. 'prices.shipping'\n",
+       "29. 'prices.size'\n",
+       "30. 'prices.sourceURLs'\n",
+       "31. 'sizes'\n",
+       "32. 'sourceURLs'\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       " [1] \"id\"                  \"dateAdded\"           \"dateUpdated\"        \n",
+       " [4] \"asins\"               \"brand\"               \"categories\"         \n",
+       " [7] \"primaryCategories\"   \"colors\"              \"dimension\"          \n",
+       "[10] \"ean\"                 \"imageURLs\"           \"keys\"               \n",
+       "[13] \"manufacturer\"        \"manufacturerNumber\"  \"name\"               \n",
+       "[16] \"prices.amountMax\"    \"prices.amountMin\"    \"prices.availability\"\n",
+       "[19] \"prices.color\"        \"prices.condition\"    \"prices.currency\"    \n",
+       "[22] \"prices.dateAdded\"    \"prices.dateSeen\"     \"prices.isSale\"      \n",
+       "[25] \"prices.merchant\"     \"prices.offer\"        \"prices.returnPolicy\"\n",
+       "[28] \"prices.shipping\"     \"prices.size\"         \"prices.sourceURLs\"  \n",
+       "[31] \"sizes\"               \"sourceURLs\"         "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "df1 = subset(df1, select = -c(upc,weight) )\n",
+    "\n",
+    "colnames(df1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "aabf1d97",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-24T23:31:37.942700Z",
+     "iopub.status.busy": "2024-06-24T23:31:37.940888Z",
+     "iopub.status.idle": "2024-06-24T23:31:37.962769Z",
+     "shell.execute_reply": "2024-06-24T23:31:37.960149Z"
+    },
+    "papermill": {
+     "duration": 0.049834,
+     "end_time": "2024-06-24T23:31:37.966317",
+     "exception": false,
+     "start_time": "2024-06-24T23:31:37.916483",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<style>\n",
+       ".list-inline {list-style: none; margin:0; padding: 0}\n",
+       ".list-inline>li {display: inline-block}\n",
+       ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+       "</style>\n",
+       "<ol class=list-inline><li>'id'</li><li>'dateAdded'</li><li>'dateUpdated'</li><li>'asins'</li><li>'brand'</li><li>'categories'</li><li>'primaryCategories'</li><li>'colors'</li><li>'dimension'</li><li>'ean'</li><li>'imageURLs'</li><li>'keys'</li><li>'manufacturer'</li><li>'manufacturerNumber'</li><li>'name'</li><li>'prices.amountMax'</li><li>'prices.amountMin'</li><li>'prices.availability'</li><li>'prices.color'</li><li>'prices.condition'</li><li>'prices.currency'</li><li>'prices.dateAdded'</li><li>'prices.dateSeen'</li><li>'prices.isSale'</li><li>'prices.merchant'</li><li>'prices.offer'</li><li>'prices.returnPolicy'</li><li>'prices.shipping'</li><li>'prices.size'</li><li>'prices.sourceURLs'</li><li>'sizes'</li><li>'sourceURLs'</li></ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 'id'\n",
+       "\\item 'dateAdded'\n",
+       "\\item 'dateUpdated'\n",
+       "\\item 'asins'\n",
+       "\\item 'brand'\n",
+       "\\item 'categories'\n",
+       "\\item 'primaryCategories'\n",
+       "\\item 'colors'\n",
+       "\\item 'dimension'\n",
+       "\\item 'ean'\n",
+       "\\item 'imageURLs'\n",
+       "\\item 'keys'\n",
+       "\\item 'manufacturer'\n",
+       "\\item 'manufacturerNumber'\n",
+       "\\item 'name'\n",
+       "\\item 'prices.amountMax'\n",
+       "\\item 'prices.amountMin'\n",
+       "\\item 'prices.availability'\n",
+       "\\item 'prices.color'\n",
+       "\\item 'prices.condition'\n",
+       "\\item 'prices.currency'\n",
+       "\\item 'prices.dateAdded'\n",
+       "\\item 'prices.dateSeen'\n",
+       "\\item 'prices.isSale'\n",
+       "\\item 'prices.merchant'\n",
+       "\\item 'prices.offer'\n",
+       "\\item 'prices.returnPolicy'\n",
+       "\\item 'prices.shipping'\n",
+       "\\item 'prices.size'\n",
+       "\\item 'prices.sourceURLs'\n",
+       "\\item 'sizes'\n",
+       "\\item 'sourceURLs'\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 'id'\n",
+       "2. 'dateAdded'\n",
+       "3. 'dateUpdated'\n",
+       "4. 'asins'\n",
+       "5. 'brand'\n",
+       "6. 'categories'\n",
+       "7. 'primaryCategories'\n",
+       "8. 'colors'\n",
+       "9. 'dimension'\n",
+       "10. 'ean'\n",
+       "11. 'imageURLs'\n",
+       "12. 'keys'\n",
+       "13. 'manufacturer'\n",
+       "14. 'manufacturerNumber'\n",
+       "15. 'name'\n",
+       "16. 'prices.amountMax'\n",
+       "17. 'prices.amountMin'\n",
+       "18. 'prices.availability'\n",
+       "19. 'prices.color'\n",
+       "20. 'prices.condition'\n",
+       "21. 'prices.currency'\n",
+       "22. 'prices.dateAdded'\n",
+       "23. 'prices.dateSeen'\n",
+       "24. 'prices.isSale'\n",
+       "25. 'prices.merchant'\n",
+       "26. 'prices.offer'\n",
+       "27. 'prices.returnPolicy'\n",
+       "28. 'prices.shipping'\n",
+       "29. 'prices.size'\n",
+       "30. 'prices.sourceURLs'\n",
+       "31. 'sizes'\n",
+       "32. 'sourceURLs'\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       " [1] \"id\"                  \"dateAdded\"           \"dateUpdated\"        \n",
+       " [4] \"asins\"               \"brand\"               \"categories\"         \n",
+       " [7] \"primaryCategories\"   \"colors\"              \"dimension\"          \n",
+       "[10] \"ean\"                 \"imageURLs\"           \"keys\"               \n",
+       "[13] \"manufacturer\"        \"manufacturerNumber\"  \"name\"               \n",
+       "[16] \"prices.amountMax\"    \"prices.amountMin\"    \"prices.availability\"\n",
+       "[19] \"prices.color\"        \"prices.condition\"    \"prices.currency\"    \n",
+       "[22] \"prices.dateAdded\"    \"prices.dateSeen\"     \"prices.isSale\"      \n",
+       "[25] \"prices.merchant\"     \"prices.offer\"        \"prices.returnPolicy\"\n",
+       "[28] \"prices.shipping\"     \"prices.size\"         \"prices.sourceURLs\"  \n",
+       "[31] \"sizes\"               \"sourceURLs\"         "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "colnames(df2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "2b6b64c7",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-24T23:31:38.015870Z",
+     "iopub.status.busy": "2024-06-24T23:31:38.014005Z",
+     "iopub.status.idle": "2024-06-24T23:31:38.050167Z",
+     "shell.execute_reply": "2024-06-24T23:31:38.047666Z"
+    },
+    "papermill": {
+     "duration": 0.06488,
+     "end_time": "2024-06-24T23:31:38.053727",
+     "exception": false,
+     "start_time": "2024-06-24T23:31:37.988847",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "      id             dateAdded         dateUpdated           asins          \n",
+       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
+       " Class :character   Class :character   Class :character   Class :character  \n",
+       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "    brand            categories        primaryCategories     colors         \n",
+       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
+       " Class :character   Class :character   Class :character   Class :character  \n",
+       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "  dimension              ean             imageURLs             keys          \n",
+       " Length:10000       Min.   :3.398e+10   Length:10000       Length:10000      \n",
+       " Class :character   1st Qu.:7.277e+11   Class :character   Class :character  \n",
+       " Mode  :character   Median :8.702e+11   Mode  :character   Mode  :character  \n",
+       "                    Mean   :7.714e+11                                        \n",
+       "                    3rd Qu.:8.861e+11                                        \n",
+       "                    Max.   :8.899e+11                                        \n",
+       "                    NA's   :9329                                             \n",
+       " manufacturer       manufacturerNumber     name           prices.amountMax\n",
+       " Length:10000       Length:10000       Length:10000       Min.   :  5.87  \n",
+       " Class :character   Class :character   Class :character   1st Qu.: 59.99  \n",
+       " Mode  :character   Mode  :character   Mode  :character   Median : 64.99  \n",
+       "                                                          Mean   : 69.22  \n",
+       "                                                          3rd Qu.: 79.99  \n",
+       "                                                          Max.   :359.95  \n",
+       "                                                                          \n",
+       " prices.amountMin prices.availability prices.color       prices.condition  \n",
+       " Min.   :  4.88   Length:10000        Length:10000       Length:10000      \n",
+       " 1st Qu.: 37.49   Class :character    Class :character   Class :character  \n",
+       " Median : 49.99   Mode  :character    Mode  :character   Mode  :character  \n",
+       " Mean   : 51.13                                                            \n",
+       " 3rd Qu.: 59.99                                                            \n",
+       " Max.   :359.95                                                            \n",
+       "                                                                           \n",
+       " prices.currency    prices.dateAdded   prices.dateSeen    prices.isSale  \n",
+       " Length:10000       Length:10000       Length:10000       Mode :logical  \n",
+       " Class :character   Class :character   Class :character   FALSE:9830     \n",
+       " Mode  :character   Mode  :character   Mode  :character   TRUE :170      \n",
+       "                                                                         \n",
+       "                                                                         \n",
+       "                                                                         \n",
+       "                                                                         \n",
+       " prices.merchant    prices.offer       prices.returnPolicy prices.shipping   \n",
+       " Length:10000       Length:10000       Mode:logical        Length:10000      \n",
+       " Class :character   Class :character   NA's:10000          Class :character  \n",
+       " Mode  :character   Mode  :character                       Mode  :character  \n",
+       "                                                                             \n",
+       "                                                                             \n",
+       "                                                                             \n",
+       "                                                                             \n",
+       " prices.size        prices.sourceURLs     sizes            sourceURLs       \n",
+       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
+       " Class :character   Class :character   Class :character   Class :character  \n",
+       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "summary(df1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "1f32b8ef",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-24T23:31:38.102614Z",
+     "iopub.status.busy": "2024-06-24T23:31:38.100812Z",
+     "iopub.status.idle": "2024-06-24T23:31:38.259006Z",
+     "shell.execute_reply": "2024-06-24T23:31:38.256411Z"
+    },
+    "papermill": {
+     "duration": 0.186849,
+     "end_time": "2024-06-24T23:31:38.262843",
+     "exception": false,
+     "start_time": "2024-06-24T23:31:38.075994",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "      id             dateAdded         dateUpdated           asins          \n",
+       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
+       " Class :character   Class :character   Class :character   Class :character  \n",
+       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "    brand            categories        primaryCategories     colors         \n",
+       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
+       " Class :character   Class :character   Class :character   Class :character  \n",
+       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "  dimension              ean             imageURLs             keys          \n",
+       " Length:10000       Min.   :1.010e+11   Length:10000       Length:10000      \n",
+       " Class :character   1st Qu.:7.090e+11   Class :character   Class :character  \n",
+       " Mode  :character   Median :8.290e+11   Mode  :character   Mode  :character  \n",
+       "                    Mean   :7.543e+11                                        \n",
+       "                    3rd Qu.:8.860e+11                                        \n",
+       "                    Max.   :9.560e+11                                        \n",
+       " manufacturer       manufacturerNumber     name           prices.amountMax \n",
+       " Length:10000       Length:10000       Length:10000       Min.   :   5.50  \n",
+       " Class :character   Class :character   Class :character   1st Qu.:  34.99  \n",
+       " Mode  :character   Mode  :character   Mode  :character   Median :  52.48  \n",
+       "                                                          Mean   :  72.20  \n",
+       "                                                          3rd Qu.:  83.96  \n",
+       "                                                          Max.   :5000.00  \n",
+       " prices.amountMin  prices.availability prices.color       prices.condition\n",
+       " Min.   :   5.50   Mode :logical       Length:10000       Mode:logical    \n",
+       " 1st Qu.:  34.99   FALSE:3731          Class :character   NA's:10000      \n",
+       " Median :  52.48   TRUE :6269          Mode  :character                   \n",
+       " Mean   :  72.20                                                          \n",
+       " 3rd Qu.:  83.96                                                          \n",
+       " Max.   :5000.00                                                          \n",
+       " prices.currency    prices.dateAdded prices.dateSeen    prices.isSale  \n",
+       " Length:10000       Mode:logical     Length:10000       Mode :logical  \n",
+       " Class :character   NA's:10000       Class :character   FALSE:1364     \n",
+       " Mode  :character                    Mode  :character   NA's :8636     \n",
+       "                                                                       \n",
+       "                                                                       \n",
+       "                                                                       \n",
+       " prices.merchant prices.offer       prices.returnPolicy prices.shipping   \n",
+       " Mode:logical    Length:10000       Mode:logical        Length:10000      \n",
+       " NA's:10000      Class :character   NA's:10000          Class :character  \n",
+       "                 Mode  :character                       Mode  :character  \n",
+       "                                                                          \n",
+       "                                                                          \n",
+       "                                                                          \n",
+       " prices.size        prices.sourceURLs     sizes            sourceURLs       \n",
+       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
+       " Class :character   Class :character   Class :character   Class :character  \n",
+       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "summary(df2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "60a222a7",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-24T23:31:38.313011Z",
+     "iopub.status.busy": "2024-06-24T23:31:38.311190Z",
+     "iopub.status.idle": "2024-06-24T23:31:38.485741Z",
+     "shell.execute_reply": "2024-06-24T23:31:38.482583Z"
+    },
+    "papermill": {
+     "duration": 0.20389,
+     "end_time": "2024-06-24T23:31:38.489122",
+     "exception": false,
+     "start_time": "2024-06-24T23:31:38.285232",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "Warning message in smartbind(df1, df2):\n",
+      "“Column class mismatch for 'prices.availability'. Converting column to class 'character'.”\n",
+      "Warning message in smartbind(df1, df2):\n",
+      "“Column class mismatch for 'prices.condition'. Converting column to class 'character'.”\n",
+      "Warning message in smartbind(df1, df2):\n",
+      "“Column class mismatch for 'prices.dateAdded'. Converting column to class 'character'.”\n",
+      "Warning message in smartbind(df1, df2):\n",
+      "“Column class mismatch for 'prices.merchant'. Converting column to class 'character'.”\n"
+     ]
+    },
+    {
+     "data": {
+      "text/html": [
+       "<table class=\"dataframe\">\n",
+       "<caption>A data.frame: 5 × 32</caption>\n",
+       "<thead>\n",
+       "\t<tr><th></th><th scope=col>id</th><th scope=col>dateAdded</th><th scope=col>dateUpdated</th><th scope=col>asins</th><th scope=col>brand</th><th scope=col>categories</th><th scope=col>primaryCategories</th><th scope=col>colors</th><th scope=col>dimension</th><th scope=col>ean</th><th scope=col>⋯</th><th scope=col>prices.dateSeen</th><th scope=col>prices.isSale</th><th scope=col>prices.merchant</th><th scope=col>prices.offer</th><th scope=col>prices.returnPolicy</th><th scope=col>prices.shipping</th><th scope=col>prices.size</th><th scope=col>prices.sourceURLs</th><th scope=col>sizes</th><th scope=col>sourceURLs</th></tr>\n",
+       "\t<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>⋯</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th></tr>\n",
+       "</thead>\n",
+       "<tbody>\n",
+       "\t<tr><th scope=row>1:1</th><td>AVpfEf_hLJeJML431ueH</td><td>2015-05-04T12:13:08Z</td><td>2018-01-29T04:38:43Z</td><td></td><td>Naturalizer</td><td><span style=white-space:pre-wrap>Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals       </span></td><td><span style=white-space:pre-wrap>Shoes      </span></td><td>Silver,Cream Watercolor Floral</td><td><span style=white-space:pre-wrap>                        </span></td><td><span style=white-space:pre-wrap>         NA</span></td><td>⋯</td><td>2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z</td><td>FALSE</td><td><span style=white-space:pre-wrap>Overstock.com   </span></td><td></td><td>NA</td><td><span style=white-space:pre-wrap>         </span></td><td>S</td><td>https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html</td><td>6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W</td><td>https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245</td></tr>\n",
+       "\t<tr><th scope=row>1:2</th><td>AVpi74XfLJeJML43qZAc</td><td>2017-01-27T01:23:39Z</td><td>2018-01-03T05:21:54Z</td><td></td><td>MUK LUKS   </td><td>Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes</td><td>Shoes      </td><td>Grey                          </td><td>                        </td><td>33977045743</td><td>⋯</td><td>2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z</td><td> TRUE</td><td>Walmart.com     </td><td></td><td>NA</td><td>Standard </td><td>6</td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                      </td><td>10,7,6,9,8                                                                                                                       </td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </td></tr>\n",
+       "\t<tr><th scope=row>1:3</th><td>AVpi74XfLJeJML43qZAc</td><td>2017-01-27T01:23:39Z</td><td>2018-01-03T05:21:54Z</td><td></td><td>MUK LUKS   </td><td>Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes</td><td>Shoes      </td><td>Grey                          </td><td>                        </td><td>33977045743</td><td>⋯</td><td>2017-11-10T15:11:00.000Z,2017-11-18T08:00:00.000Z</td><td>FALSE</td><td>Slippers Dot Com</td><td></td><td>NA</td><td>Value    </td><td>6</td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                      </td><td>10,7,6,9,8                                                                                                                       </td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </td></tr>\n",
+       "\t<tr><th scope=row>1:4</th><td>AVpjXyCc1cnluZ0-V-Gj</td><td>2017-01-27T01:25:56Z</td><td>2018-01-04T11:52:35Z</td><td></td><td>MUK LUKS   </td><td>Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers    </td><td>Shoes,Shoes</td><td>Black                         </td><td>6.0 in x 6.0 in x 1.0 in</td><td>33977045903</td><td>⋯</td><td>2017-12-07T16:37:00.000Z                         </td><td>FALSE</td><td>Slippers Dot Com</td><td></td><td>NA</td><td>Value    </td><td>6</td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                 </td><td>10,7,6,9,8                                                                                                                       </td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600,http://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </td></tr>\n",
+       "\t<tr><th scope=row>1:5</th><td>AVphGKLPilAPnD_x1Nrm</td><td>2017-01-27T01:25:56Z</td><td>2018-01-18T03:55:18Z</td><td></td><td>MUK LUKS   </td><td>Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers    </td><td>Shoes      </td><td>Grey                          </td><td>6.0 in x 6.0 in x 1.0 in</td><td>33977045958</td><td>⋯</td><td>2017-11-17T21:15:00.000Z                         </td><td> TRUE</td><td>Walmart.com     </td><td></td><td>NA</td><td>Expedited</td><td>6</td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525                                                                                                                                                                 </td><td>10,7,6,9,8                                                                                                                       </td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525,https://www.walmart.com/ip/Women-s-MUK-LUKS-Dawn-Suede-Scuff/41288525,https://www.walmart.com/ip/41288525                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     </td></tr>\n",
+       "</tbody>\n",
+       "</table>\n"
+      ],
+      "text/latex": [
+       "A data.frame: 5 × 32\n",
+       "\\begin{tabular}{r|lllllllllllllllllllll}\n",
+       "  & id & dateAdded & dateUpdated & asins & brand & categories & primaryCategories & colors & dimension & ean & ⋯ & prices.dateSeen & prices.isSale & prices.merchant & prices.offer & prices.returnPolicy & prices.shipping & prices.size & prices.sourceURLs & sizes & sourceURLs\\\\\n",
+       "  & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <dbl> & ⋯ & <chr> & <lgl> & <chr> & <chr> & <lgl> & <chr> & <chr> & <chr> & <chr> & <chr>\\\\\n",
+       "\\hline\n",
+       "\t1:1 & AVpfEf\\_hLJeJML431ueH & 2015-05-04T12:13:08Z & 2018-01-29T04:38:43Z &  & Naturalizer & Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals        & Shoes       & Silver,Cream Watercolor Floral &                          &          NA & ⋯ & 2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z & FALSE & Overstock.com    &  & NA &           & S & https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html & 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W & https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI\\&searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2\\_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4\\&searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4\\&searchidx=4245\\\\\n",
+       "\t1:2 & AVpi74XfLJeJML43qZAc & 2017-01-27T01:23:39Z & 2018-01-03T05:21:54Z &  & MUK LUKS    & Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes & Shoes       & Grey                           &                          & 33977045743 & ⋯ & 2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z &  TRUE & Walmart.com      &  & NA & Standard  & 6 & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       & 10,7,6,9,8                                                                                                                        & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\\\\n",
+       "\t1:3 & AVpi74XfLJeJML43qZAc & 2017-01-27T01:23:39Z & 2018-01-03T05:21:54Z &  & MUK LUKS    & Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes & Shoes       & Grey                           &                          & 33977045743 & ⋯ & 2017-11-10T15:11:00.000Z,2017-11-18T08:00:00.000Z & FALSE & Slippers Dot Com &  & NA & Value     & 6 & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       & 10,7,6,9,8                                                                                                                        & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\\\\n",
+       "\t1:4 & AVpjXyCc1cnluZ0-V-Gj & 2017-01-27T01:25:56Z & 2018-01-04T11:52:35Z &  & MUK LUKS    & Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers     & Shoes,Shoes & Black                          & 6.0 in x 6.0 in x 1.0 in & 33977045903 & ⋯ & 2017-12-07T16:37:00.000Z                          & FALSE & Slippers Dot Com &  & NA & Value     & 6 & https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                  & 10,7,6,9,8                                                                                                                        & https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600,http://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \\\\\n",
+       "\t1:5 & AVphGKLPilAPnD\\_x1Nrm & 2017-01-27T01:25:56Z & 2018-01-18T03:55:18Z &  & MUK LUKS    & Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers     & Shoes       & Grey                           & 6.0 in x 6.0 in x 1.0 in & 33977045958 & ⋯ & 2017-11-17T21:15:00.000Z                          &  TRUE & Walmart.com      &  & NA & Expedited & 6 & https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525                                                                                                                                                                  & 10,7,6,9,8                                                                                                                        & https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525,https://www.walmart.com/ip/Women-s-MUK-LUKS-Dawn-Suede-Scuff/41288525,https://www.walmart.com/ip/41288525                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     \\\\\n",
+       "\\end{tabular}\n"
+      ],
+      "text/markdown": [
+       "\n",
+       "A data.frame: 5 × 32\n",
+       "\n",
+       "| <!--/--> | id &lt;chr&gt; | dateAdded &lt;chr&gt; | dateUpdated &lt;chr&gt; | asins &lt;chr&gt; | brand &lt;chr&gt; | categories &lt;chr&gt; | primaryCategories &lt;chr&gt; | colors &lt;chr&gt; | dimension &lt;chr&gt; | ean &lt;dbl&gt; | ⋯ ⋯ | prices.dateSeen &lt;chr&gt; | prices.isSale &lt;lgl&gt; | prices.merchant &lt;chr&gt; | prices.offer &lt;chr&gt; | prices.returnPolicy &lt;lgl&gt; | prices.shipping &lt;chr&gt; | prices.size &lt;chr&gt; | prices.sourceURLs &lt;chr&gt; | sizes &lt;chr&gt; | sourceURLs &lt;chr&gt; |\n",
+       "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n",
+       "| 1:1 | AVpfEf_hLJeJML431ueH | 2015-05-04T12:13:08Z | 2018-01-29T04:38:43Z | <!----> | Naturalizer | Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals        | Shoes       | Silver,Cream Watercolor Floral | <!----> |          NA | ⋯ | 2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z | FALSE | Overstock.com    | <!----> | NA | <!----> | S | https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html | 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W | https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245 |\n",
+       "| 1:2 | AVpi74XfLJeJML43qZAc | 2017-01-27T01:23:39Z | 2018-01-03T05:21:54Z | <!----> | MUK LUKS    | Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes | Shoes       | Grey                           | <!----> | 33977045743 | ⋯ | 2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z |  TRUE | Walmart.com      | <!----> | NA | Standard  | 6 | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       | 10,7,6,9,8                                                                                                                        | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\n",
+       "| 1:3 | AVpi74XfLJeJML43qZAc | 2017-01-27T01:23:39Z | 2018-01-03T05:21:54Z | <!----> | MUK LUKS    | Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes | Shoes       | Grey                           | <!----> | 33977045743 | ⋯ | 2017-11-10T15:11:00.000Z,2017-11-18T08:00:00.000Z | FALSE | Slippers Dot Com | <!----> | NA | Value     | 6 | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       | 10,7,6,9,8                                                                                                                        | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\n",
+       "| 1:4 | AVpjXyCc1cnluZ0-V-Gj | 2017-01-27T01:25:56Z | 2018-01-04T11:52:35Z | <!----> | MUK LUKS    | Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers     | Shoes,Shoes | Black                          | 6.0 in x 6.0 in x 1.0 in | 33977045903 | ⋯ | 2017-12-07T16:37:00.000Z                          | FALSE | Slippers Dot Com | <!----> | NA | Value     | 6 | https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                  | 10,7,6,9,8                                                                                                                        | https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600,http://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n",
+       "| 1:5 | AVphGKLPilAPnD_x1Nrm | 2017-01-27T01:25:56Z | 2018-01-18T03:55:18Z | <!----> | MUK LUKS    | Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers     | Shoes       | Grey                           | 6.0 in x 6.0 in x 1.0 in | 33977045958 | ⋯ | 2017-11-17T21:15:00.000Z                          |  TRUE | Walmart.com      | <!----> | NA | Expedited | 6 | https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525                                                                                                                                                                  | 10,7,6,9,8                                                                                                                        | https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525,https://www.walmart.com/ip/Women-s-MUK-LUKS-Dawn-Suede-Scuff/41288525,https://www.walmart.com/ip/41288525                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n",
+       "\n"
+      ],
+      "text/plain": [
+       "    id                   dateAdded            dateUpdated          asins\n",
+       "1:1 AVpfEf_hLJeJML431ueH 2015-05-04T12:13:08Z 2018-01-29T04:38:43Z      \n",
+       "1:2 AVpi74XfLJeJML43qZAc 2017-01-27T01:23:39Z 2018-01-03T05:21:54Z      \n",
+       "1:3 AVpi74XfLJeJML43qZAc 2017-01-27T01:23:39Z 2018-01-03T05:21:54Z      \n",
+       "1:4 AVpjXyCc1cnluZ0-V-Gj 2017-01-27T01:25:56Z 2018-01-04T11:52:35Z      \n",
+       "1:5 AVphGKLPilAPnD_x1Nrm 2017-01-27T01:25:56Z 2018-01-18T03:55:18Z      \n",
+       "    brand      \n",
+       "1:1 Naturalizer\n",
+       "1:2 MUK LUKS   \n",
+       "1:3 MUK LUKS   \n",
+       "1:4 MUK LUKS   \n",
+       "1:5 MUK LUKS   \n",
+       "    categories                                                         \n",
+       "1:1 Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals       \n",
+       "1:2 Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes\n",
+       "1:3 Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes\n",
+       "1:4 Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers    \n",
+       "1:5 Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers    \n",
+       "    primaryCategories colors                         dimension               \n",
+       "1:1 Shoes             Silver,Cream Watercolor Floral                         \n",
+       "1:2 Shoes             Grey                                                   \n",
+       "1:3 Shoes             Grey                                                   \n",
+       "1:4 Shoes,Shoes       Black                          6.0 in x 6.0 in x 1.0 in\n",
+       "1:5 Shoes             Grey                           6.0 in x 6.0 in x 1.0 in\n",
+       "    ean         ⋯ prices.dateSeen                                  \n",
+       "1:1          NA ⋯ 2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z\n",
+       "1:2 33977045743 ⋯ 2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z\n",
+       "1:3 33977045743 ⋯ 2017-11-10T15:11:00.000Z,2017-11-18T08:00:00.000Z\n",
+       "1:4 33977045903 ⋯ 2017-12-07T16:37:00.000Z                         \n",
+       "1:5 33977045958 ⋯ 2017-11-17T21:15:00.000Z                         \n",
+       "    prices.isSale prices.merchant  prices.offer prices.returnPolicy\n",
+       "1:1 FALSE         Overstock.com                 NA                 \n",
+       "1:2  TRUE         Walmart.com                   NA                 \n",
+       "1:3 FALSE         Slippers Dot Com              NA                 \n",
+       "1:4 FALSE         Slippers Dot Com              NA                 \n",
+       "1:5  TRUE         Walmart.com                   NA                 \n",
+       "    prices.shipping prices.size\n",
+       "1:1                 S          \n",
+       "1:2 Standard        6          \n",
+       "1:3 Value           6          \n",
+       "1:4 Value           6          \n",
+       "1:5 Expedited       6          \n",
+       "    prices.sourceURLs                                                                                                                                                                                                                            \n",
+       "1:1 https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html\n",
+       "1:2 https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                      \n",
+       "1:3 https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                      \n",
+       "1:4 https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                 \n",
+       "1:5 https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525                                                                                                                                                                 \n",
+       "    sizes                                                                                                                            \n",
+       "1:1 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W\n",
+       "1:2 10,7,6,9,8                                                                                                                       \n",
+       "1:3 10,7,6,9,8                                                                                                                       \n",
+       "1:4 10,7,6,9,8                                                                                                                       \n",
+       "1:5 10,7,6,9,8                                                                                                                       \n",
+       "    sourceURLs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \n",
+       "1:1 https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&searchidx=4245\n",
+       "1:2 https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \n",
+       "1:3 https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \n",
+       "1:4 https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600,http://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \n",
+       "1:5 https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525,https://www.walmart.com/ip/Women-s-MUK-LUKS-Dawn-Suede-Scuff/41288525,https://www.walmart.com/ip/41288525                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "##appending dataframes\n",
+    "df3 = smartbind(df1, df2)\n",
+    "head(df3,5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1fa05df4",
+   "metadata": {
+    "papermill": {
+     "duration": 0.031846,
+     "end_time": "2024-06-24T23:31:38.553373",
+     "exception": false,
+     "start_time": "2024-06-24T23:31:38.521527",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
@@ -707,14 +1785,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 7.450305,
-   "end_time": "2024-06-24T22:33:38.568706",
+   "duration": 14.514505,
+   "end_time": "2024-06-24T23:31:38.701648",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-06-24T22:33:31.118401",
+   "start_time": "2024-06-24T23:31:24.187143",
    "version": "2.5.0"
   }
  },
