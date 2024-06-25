@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "3f186bb1",
+   "id": "ecf45a2c",
    "metadata": {
     "_execution_state": "idle",
     "_uuid": "051d70d956493feee0c6d64651c6a088724dca2a",
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:28.058958Z",
-     "iopub.status.busy": "2024-06-24T23:31:28.054333Z",
-     "iopub.status.idle": "2024-06-24T23:31:29.393903Z",
-     "shell.execute_reply": "2024-06-24T23:31:29.391892Z"
+     "iopub.execute_input": "2024-06-25T02:48:33.503259Z",
+     "iopub.status.busy": "2024-06-25T02:48:33.501169Z",
+     "iopub.status.idle": "2024-06-25T02:48:34.580122Z",
+     "shell.execute_reply": "2024-06-25T02:48:34.578373Z"
     },
     "papermill": {
-     "duration": 1.363805,
-     "end_time": "2024-06-24T23:31:29.397383",
+     "duration": 1.095103,
+     "end_time": "2024-06-25T02:48:34.582435",
      "exception": false,
-     "start_time": "2024-06-24T23:31:28.033578",
+     "start_time": "2024-06-25T02:48:33.487332",
      "status": "completed"
     },
     "tags": []
@@ -77,19 +77,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "7ed6c794",
+   "id": "069bb1cd",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:29.466463Z",
-     "iopub.status.busy": "2024-06-24T23:31:29.431167Z",
-     "iopub.status.idle": "2024-06-24T23:31:34.375061Z",
-     "shell.execute_reply": "2024-06-24T23:31:34.372815Z"
+     "iopub.execute_input": "2024-06-25T02:48:34.640487Z",
+     "iopub.status.busy": "2024-06-25T02:48:34.611278Z",
+     "iopub.status.idle": "2024-06-25T02:48:38.600805Z",
+     "shell.execute_reply": "2024-06-25T02:48:38.599015Z"
     },
     "papermill": {
-     "duration": 4.964946,
-     "end_time": "2024-06-24T23:31:34.378214",
+     "duration": 4.007671,
+     "end_time": "2024-06-25T02:48:38.603999",
      "exception": false,
-     "start_time": "2024-06-24T23:31:29.413268",
+     "start_time": "2024-06-25T02:48:34.596328",
      "status": "completed"
     },
     "tags": []
@@ -99,6 +99,29 @@
      "name": "stderr",
      "output_type": "stream",
      "text": [
+      "------------------------------------------------------------------------------\n",
+      "\n",
+      "You have loaded plyr after dplyr - this is likely to cause problems.\n",
+      "If you need functions from both plyr and dplyr, please load plyr first, then dplyr:\n",
+      "library(plyr); library(dplyr)\n",
+      "\n",
+      "------------------------------------------------------------------------------\n",
+      "\n",
+      "\n",
+      "Attaching package: ‘plyr’\n",
+      "\n",
+      "\n",
+      "The following objects are masked from ‘package:dplyr’:\n",
+      "\n",
+      "    arrange, count, desc, failwith, id, mutate, rename, summarise,\n",
+      "    summarize\n",
+      "\n",
+      "\n",
+      "The following object is masked from ‘package:purrr’:\n",
+      "\n",
+      "    compact\n",
+      "\n",
+      "\n",
       "Loading required package: lattice\n",
       "\n",
       "\n",
@@ -177,41 +200,18 @@
       "    abbreviate, write\n",
       "\n",
       "\n",
-      "------------------------------------------------------------------------------\n",
-      "\n",
-      "You have loaded plyr after dplyr - this is likely to cause problems.\n",
-      "If you need functions from both plyr and dplyr, please load plyr first, then dplyr:\n",
-      "library(plyr); library(dplyr)\n",
-      "\n",
-      "------------------------------------------------------------------------------\n",
-      "\n",
-      "\n",
-      "Attaching package: ‘plyr’\n",
-      "\n",
-      "\n",
-      "The following objects are masked from ‘package:dplyr’:\n",
-      "\n",
-      "    arrange, count, desc, failwith, id, mutate, rename, summarise,\n",
-      "    summarize\n",
-      "\n",
-      "\n",
-      "The following object is masked from ‘package:purrr’:\n",
-      "\n",
-      "    compact\n",
-      "\n",
-      "\n",
       "\n",
       "Attaching package: ‘plotly’\n",
-      "\n",
-      "\n",
-      "The following objects are masked from ‘package:plyr’:\n",
-      "\n",
-      "    arrange, mutate, rename, summarise\n",
       "\n",
       "\n",
       "The following object is masked from ‘package:formattable’:\n",
       "\n",
       "    style\n",
+      "\n",
+      "\n",
+      "The following objects are masked from ‘package:plyr’:\n",
+      "\n",
+      "    arrange, mutate, rename, summarise\n",
       "\n",
       "\n",
       "The following object is masked from ‘package:ggplot2’:\n",
@@ -238,6 +238,7 @@
     }
    ],
    "source": [
+    "library(plyr)\n",
     "library(dplyr) # for data manipulation\n",
     "library(stringr) # for data manipulation\n",
     "library(caret) # for sampling\n",
@@ -256,7 +257,6 @@
     "library(data.table)\n",
     "library(arules)\n",
     "library(arulesViz)\n",
-    "library(plyr)\n",
     "library(IRdisplay)\n",
     "library(plotly)\n",
     "library(gtools)"
@@ -269,13 +269,13 @@
     }
    },
    "cell_type": "markdown",
-   "id": "6231bbcc",
+   "id": "f9df790d",
    "metadata": {
     "papermill": {
-     "duration": 0.018094,
-     "end_time": "2024-06-24T23:31:34.413948",
+     "duration": 0.014765,
+     "end_time": "2024-06-25T02:48:38.633577",
      "exception": false,
-     "start_time": "2024-06-24T23:31:34.395854",
+     "start_time": "2024-06-25T02:48:38.618812",
      "status": "completed"
     },
     "tags": []
@@ -291,13 +291,13 @@
     }
    },
    "cell_type": "markdown",
-   "id": "71c2c7f7",
+   "id": "c15b3d0a",
    "metadata": {
     "papermill": {
-     "duration": 0.018052,
-     "end_time": "2024-06-24T23:31:34.450432",
+     "duration": 0.014578,
+     "end_time": "2024-06-25T02:48:38.662594",
      "exception": false,
-     "start_time": "2024-06-24T23:31:34.432380",
+     "start_time": "2024-06-25T02:48:38.648016",
      "status": "completed"
     },
     "tags": []
@@ -308,13 +308,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "f3e83b44",
+   "id": "ed7c0dcf",
    "metadata": {
     "papermill": {
-     "duration": 0.018531,
-     "end_time": "2024-06-24T23:31:34.487233",
+     "duration": 0.014772,
+     "end_time": "2024-06-25T02:48:38.691879",
      "exception": false,
-     "start_time": "2024-06-24T23:31:34.468702",
+     "start_time": "2024-06-25T02:48:38.677107",
      "status": "completed"
     },
     "tags": []
@@ -326,13 +326,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "2dadb8a8",
+   "id": "423e13f3",
    "metadata": {
     "papermill": {
-     "duration": 0.018217,
-     "end_time": "2024-06-24T23:31:34.525063",
+     "duration": 0.014975,
+     "end_time": "2024-06-25T02:48:38.721585",
      "exception": false,
-     "start_time": "2024-06-24T23:31:34.506846",
+     "start_time": "2024-06-25T02:48:38.706610",
      "status": "completed"
     },
     "tags": []
@@ -344,19 +344,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "1f34d701",
+   "id": "5420b55b",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:34.565956Z",
-     "iopub.status.busy": "2024-06-24T23:31:34.563980Z",
-     "iopub.status.idle": "2024-06-24T23:31:34.586138Z",
-     "shell.execute_reply": "2024-06-24T23:31:34.584110Z"
+     "iopub.execute_input": "2024-06-25T02:48:38.754825Z",
+     "iopub.status.busy": "2024-06-25T02:48:38.753218Z",
+     "iopub.status.idle": "2024-06-25T02:48:38.773507Z",
+     "shell.execute_reply": "2024-06-25T02:48:38.771274Z"
     },
     "papermill": {
-     "duration": 0.04621,
-     "end_time": "2024-06-24T23:31:34.589053",
+     "duration": 0.040101,
+     "end_time": "2024-06-25T02:48:38.776374",
      "exception": false,
-     "start_time": "2024-06-24T23:31:34.542843",
+     "start_time": "2024-06-25T02:48:38.736273",
      "status": "completed"
     },
     "tags": []
@@ -388,19 +388,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "28eec9e1",
+   "id": "427968ef",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:34.629583Z",
-     "iopub.status.busy": "2024-06-24T23:31:34.627705Z",
-     "iopub.status.idle": "2024-06-24T23:31:34.663686Z",
-     "shell.execute_reply": "2024-06-24T23:31:34.661493Z"
+     "iopub.execute_input": "2024-06-25T02:48:38.810161Z",
+     "iopub.status.busy": "2024-06-25T02:48:38.808578Z",
+     "iopub.status.idle": "2024-06-25T02:48:38.841998Z",
+     "shell.execute_reply": "2024-06-25T02:48:38.839745Z"
     },
     "papermill": {
-     "duration": 0.059727,
-     "end_time": "2024-06-24T23:31:34.666592",
+     "duration": 0.053131,
+     "end_time": "2024-06-25T02:48:38.844854",
      "exception": false,
-     "start_time": "2024-06-24T23:31:34.606865",
+     "start_time": "2024-06-25T02:48:38.791723",
      "status": "completed"
     },
     "tags": []
@@ -465,19 +465,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "1d70f34c",
+   "id": "bb019097",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:34.709307Z",
-     "iopub.status.busy": "2024-06-24T23:31:34.707428Z",
-     "iopub.status.idle": "2024-06-24T23:31:36.590135Z",
-     "shell.execute_reply": "2024-06-24T23:31:36.588104Z"
+     "iopub.execute_input": "2024-06-25T02:48:38.879472Z",
+     "iopub.status.busy": "2024-06-25T02:48:38.877933Z",
+     "iopub.status.idle": "2024-06-25T02:48:40.372577Z",
+     "shell.execute_reply": "2024-06-25T02:48:40.369684Z"
     },
     "papermill": {
-     "duration": 1.907257,
-     "end_time": "2024-06-24T23:31:36.593393",
+     "duration": 1.516024,
+     "end_time": "2024-06-25T02:48:40.376297",
      "exception": false,
-     "start_time": "2024-06-24T23:31:34.686136",
+     "start_time": "2024-06-25T02:48:38.860273",
      "status": "completed"
     },
     "tags": []
@@ -668,19 +668,19 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "5ff67cdf",
+   "id": "8f767772",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:36.639048Z",
-     "iopub.status.busy": "2024-06-24T23:31:36.637237Z",
-     "iopub.status.idle": "2024-06-24T23:31:37.544303Z",
-     "shell.execute_reply": "2024-06-24T23:31:37.541213Z"
+     "iopub.execute_input": "2024-06-25T02:48:40.414680Z",
+     "iopub.status.busy": "2024-06-25T02:48:40.412865Z",
+     "iopub.status.idle": "2024-06-25T02:48:41.133422Z",
+     "shell.execute_reply": "2024-06-25T02:48:41.130659Z"
     },
     "papermill": {
-     "duration": 0.933484,
-     "end_time": "2024-06-24T23:31:37.547867",
+     "duration": 0.742602,
+     "end_time": "2024-06-25T02:48:41.136278",
      "exception": false,
-     "start_time": "2024-06-24T23:31:36.614383",
+     "start_time": "2024-06-25T02:48:40.393676",
      "status": "completed"
     },
     "tags": []
@@ -848,13 +848,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "44b0745f",
+   "id": "245f388f",
    "metadata": {
     "papermill": {
-     "duration": 0.020538,
-     "end_time": "2024-06-24T23:31:37.589637",
+     "duration": 0.017021,
+     "end_time": "2024-06-25T02:48:41.171229",
      "exception": false,
-     "start_time": "2024-06-24T23:31:37.569099",
+     "start_time": "2024-06-25T02:48:41.154208",
      "status": "completed"
     },
     "tags": []
@@ -866,19 +866,19 @@
   {
    "cell_type": "code",
    "execution_count": 7,
-   "id": "66c9966d",
+   "id": "0f8a131c",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:37.634661Z",
-     "iopub.status.busy": "2024-06-24T23:31:37.632509Z",
-     "iopub.status.idle": "2024-06-24T23:31:37.656720Z",
-     "shell.execute_reply": "2024-06-24T23:31:37.653904Z"
+     "iopub.execute_input": "2024-06-25T02:48:41.209106Z",
+     "iopub.status.busy": "2024-06-25T02:48:41.207519Z",
+     "iopub.status.idle": "2024-06-25T02:48:41.226925Z",
+     "shell.execute_reply": "2024-06-25T02:48:41.225125Z"
     },
     "papermill": {
-     "duration": 0.050962,
-     "end_time": "2024-06-24T23:31:37.660785",
+     "duration": 0.040805,
+     "end_time": "2024-06-25T02:48:41.229167",
      "exception": false,
-     "start_time": "2024-06-24T23:31:37.609823",
+     "start_time": "2024-06-25T02:48:41.188362",
      "status": "completed"
     },
     "tags": []
@@ -996,19 +996,19 @@
   {
    "cell_type": "code",
    "execution_count": 8,
-   "id": "74a91b73",
+   "id": "530689bf",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:37.707393Z",
-     "iopub.status.busy": "2024-06-24T23:31:37.705556Z",
-     "iopub.status.idle": "2024-06-24T23:31:37.728099Z",
-     "shell.execute_reply": "2024-06-24T23:31:37.725486Z"
+     "iopub.execute_input": "2024-06-25T02:48:41.268053Z",
+     "iopub.status.busy": "2024-06-25T02:48:41.266489Z",
+     "iopub.status.idle": "2024-06-25T02:48:41.283883Z",
+     "shell.execute_reply": "2024-06-25T02:48:41.282219Z"
     },
     "papermill": {
-     "duration": 0.050199,
-     "end_time": "2024-06-24T23:31:37.731963",
+     "duration": 0.039426,
+     "end_time": "2024-06-25T02:48:41.286203",
      "exception": false,
-     "start_time": "2024-06-24T23:31:37.681764",
+     "start_time": "2024-06-25T02:48:41.246777",
      "status": "completed"
     },
     "tags": []
@@ -1121,45 +1121,45 @@
   {
    "cell_type": "code",
    "execution_count": 9,
-   "id": "2c5821e1",
+   "id": "a6019b36",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:37.778921Z",
-     "iopub.status.busy": "2024-06-24T23:31:37.777121Z",
-     "iopub.status.idle": "2024-06-24T23:31:37.795674Z",
-     "shell.execute_reply": "2024-06-24T23:31:37.793600Z"
+     "iopub.execute_input": "2024-06-25T02:48:41.326728Z",
+     "iopub.status.busy": "2024-06-25T02:48:41.325134Z",
+     "iopub.status.idle": "2024-06-25T02:48:41.340386Z",
+     "shell.execute_reply": "2024-06-25T02:48:41.338651Z"
     },
     "papermill": {
-     "duration": 0.045789,
-     "end_time": "2024-06-24T23:31:37.799343",
+     "duration": 0.037841,
+     "end_time": "2024-06-25T02:48:41.342742",
      "exception": false,
-     "start_time": "2024-06-24T23:31:37.753554",
+     "start_time": "2024-06-25T02:48:41.304901",
      "status": "completed"
     },
     "tags": []
    },
    "outputs": [],
    "source": [
-    "# Rename column where names is \"Sepal.Length\"\n",
+    "# Rename column to prepare for appending dataframes together\n",
     "names(df2)[names(df2) == \"ean...upc\"] <- \"ean\"\n"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 10,
-   "id": "9a03d800",
+   "id": "1e2a4dfb",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:37.846445Z",
-     "iopub.status.busy": "2024-06-24T23:31:37.844542Z",
-     "iopub.status.idle": "2024-06-24T23:31:37.891259Z",
-     "shell.execute_reply": "2024-06-24T23:31:37.888645Z"
+     "iopub.execute_input": "2024-06-25T02:48:41.381656Z",
+     "iopub.status.busy": "2024-06-25T02:48:41.380109Z",
+     "iopub.status.idle": "2024-06-25T02:48:41.505460Z",
+     "shell.execute_reply": "2024-06-25T02:48:41.503700Z"
     },
     "papermill": {
-     "duration": 0.074077,
-     "end_time": "2024-06-24T23:31:37.894784",
+     "duration": 0.147359,
+     "end_time": "2024-06-25T02:48:41.507861",
      "exception": false,
-     "start_time": "2024-06-24T23:31:37.820707",
+     "start_time": "2024-06-25T02:48:41.360502",
      "status": "completed"
     },
     "tags": []
@@ -1274,19 +1274,19 @@
   {
    "cell_type": "code",
    "execution_count": 11,
-   "id": "aabf1d97",
+   "id": "2addd6cd",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:37.942700Z",
-     "iopub.status.busy": "2024-06-24T23:31:37.940888Z",
-     "iopub.status.idle": "2024-06-24T23:31:37.962769Z",
-     "shell.execute_reply": "2024-06-24T23:31:37.960149Z"
+     "iopub.execute_input": "2024-06-25T02:48:41.547693Z",
+     "iopub.status.busy": "2024-06-25T02:48:41.546154Z",
+     "iopub.status.idle": "2024-06-25T02:48:41.563198Z",
+     "shell.execute_reply": "2024-06-25T02:48:41.561563Z"
     },
     "papermill": {
-     "duration": 0.049834,
-     "end_time": "2024-06-24T23:31:37.966317",
+     "duration": 0.039543,
+     "end_time": "2024-06-25T02:48:41.565458",
      "exception": false,
-     "start_time": "2024-06-24T23:31:37.916483",
+     "start_time": "2024-06-25T02:48:41.525915",
      "status": "completed"
     },
     "tags": []
@@ -1399,19 +1399,19 @@
   {
    "cell_type": "code",
    "execution_count": 12,
-   "id": "2b6b64c7",
+   "id": "73fbf88f",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:38.015870Z",
-     "iopub.status.busy": "2024-06-24T23:31:38.014005Z",
-     "iopub.status.idle": "2024-06-24T23:31:38.050167Z",
-     "shell.execute_reply": "2024-06-24T23:31:38.047666Z"
+     "iopub.execute_input": "2024-06-25T02:48:41.605255Z",
+     "iopub.status.busy": "2024-06-25T02:48:41.603674Z",
+     "iopub.status.idle": "2024-06-25T02:48:41.632871Z",
+     "shell.execute_reply": "2024-06-25T02:48:41.631168Z"
     },
     "papermill": {
-     "duration": 0.06488,
-     "end_time": "2024-06-24T23:31:38.053727",
+     "duration": 0.051593,
+     "end_time": "2024-06-25T02:48:41.635151",
      "exception": false,
-     "start_time": "2024-06-24T23:31:37.988847",
+     "start_time": "2024-06-25T02:48:41.583558",
      "status": "completed"
     },
     "tags": []
@@ -1497,19 +1497,19 @@
   {
    "cell_type": "code",
    "execution_count": 13,
-   "id": "1f32b8ef",
+   "id": "137e28f6",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:38.102614Z",
-     "iopub.status.busy": "2024-06-24T23:31:38.100812Z",
-     "iopub.status.idle": "2024-06-24T23:31:38.259006Z",
-     "shell.execute_reply": "2024-06-24T23:31:38.256411Z"
+     "iopub.execute_input": "2024-06-25T02:48:41.675484Z",
+     "iopub.status.busy": "2024-06-25T02:48:41.673948Z",
+     "iopub.status.idle": "2024-06-25T02:48:41.704036Z",
+     "shell.execute_reply": "2024-06-25T02:48:41.702366Z"
     },
     "papermill": {
-     "duration": 0.186849,
-     "end_time": "2024-06-24T23:31:38.262843",
+     "duration": 0.052672,
+     "end_time": "2024-06-25T02:48:41.706298",
      "exception": false,
-     "start_time": "2024-06-24T23:31:38.075994",
+     "start_time": "2024-06-25T02:48:41.653626",
      "status": "completed"
     },
     "tags": []
@@ -1587,19 +1587,19 @@
   {
    "cell_type": "code",
    "execution_count": 14,
-   "id": "60a222a7",
+   "id": "6b5c74a4",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-24T23:31:38.313011Z",
-     "iopub.status.busy": "2024-06-24T23:31:38.311190Z",
-     "iopub.status.idle": "2024-06-24T23:31:38.485741Z",
-     "shell.execute_reply": "2024-06-24T23:31:38.482583Z"
+     "iopub.execute_input": "2024-06-25T02:48:41.746501Z",
+     "iopub.status.busy": "2024-06-25T02:48:41.744946Z",
+     "iopub.status.idle": "2024-06-25T02:48:42.164469Z",
+     "shell.execute_reply": "2024-06-25T02:48:42.162745Z"
     },
     "papermill": {
-     "duration": 0.20389,
-     "end_time": "2024-06-24T23:31:38.489122",
+     "duration": 0.442372,
+     "end_time": "2024-06-25T02:48:42.166928",
      "exception": false,
-     "start_time": "2024-06-24T23:31:38.285232",
+     "start_time": "2024-06-25T02:48:41.724556",
      "status": "completed"
     },
     "tags": []
@@ -1623,107 +1623,68 @@
      "data": {
       "text/html": [
        "<table class=\"dataframe\">\n",
-       "<caption>A data.frame: 5 × 32</caption>\n",
+       "<caption>A data.frame: 2 × 32</caption>\n",
        "<thead>\n",
        "\t<tr><th></th><th scope=col>id</th><th scope=col>dateAdded</th><th scope=col>dateUpdated</th><th scope=col>asins</th><th scope=col>brand</th><th scope=col>categories</th><th scope=col>primaryCategories</th><th scope=col>colors</th><th scope=col>dimension</th><th scope=col>ean</th><th scope=col>⋯</th><th scope=col>prices.dateSeen</th><th scope=col>prices.isSale</th><th scope=col>prices.merchant</th><th scope=col>prices.offer</th><th scope=col>prices.returnPolicy</th><th scope=col>prices.shipping</th><th scope=col>prices.size</th><th scope=col>prices.sourceURLs</th><th scope=col>sizes</th><th scope=col>sourceURLs</th></tr>\n",
        "\t<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>⋯</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th></tr>\n",
        "</thead>\n",
        "<tbody>\n",
-       "\t<tr><th scope=row>1:1</th><td>AVpfEf_hLJeJML431ueH</td><td>2015-05-04T12:13:08Z</td><td>2018-01-29T04:38:43Z</td><td></td><td>Naturalizer</td><td><span style=white-space:pre-wrap>Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals       </span></td><td><span style=white-space:pre-wrap>Shoes      </span></td><td>Silver,Cream Watercolor Floral</td><td><span style=white-space:pre-wrap>                        </span></td><td><span style=white-space:pre-wrap>         NA</span></td><td>⋯</td><td>2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z</td><td>FALSE</td><td><span style=white-space:pre-wrap>Overstock.com   </span></td><td></td><td>NA</td><td><span style=white-space:pre-wrap>         </span></td><td>S</td><td>https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html</td><td>6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W</td><td>https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245</td></tr>\n",
-       "\t<tr><th scope=row>1:2</th><td>AVpi74XfLJeJML43qZAc</td><td>2017-01-27T01:23:39Z</td><td>2018-01-03T05:21:54Z</td><td></td><td>MUK LUKS   </td><td>Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes</td><td>Shoes      </td><td>Grey                          </td><td>                        </td><td>33977045743</td><td>⋯</td><td>2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z</td><td> TRUE</td><td>Walmart.com     </td><td></td><td>NA</td><td>Standard </td><td>6</td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                      </td><td>10,7,6,9,8                                                                                                                       </td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </td></tr>\n",
-       "\t<tr><th scope=row>1:3</th><td>AVpi74XfLJeJML43qZAc</td><td>2017-01-27T01:23:39Z</td><td>2018-01-03T05:21:54Z</td><td></td><td>MUK LUKS   </td><td>Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes</td><td>Shoes      </td><td>Grey                          </td><td>                        </td><td>33977045743</td><td>⋯</td><td>2017-11-10T15:11:00.000Z,2017-11-18T08:00:00.000Z</td><td>FALSE</td><td>Slippers Dot Com</td><td></td><td>NA</td><td>Value    </td><td>6</td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                      </td><td>10,7,6,9,8                                                                                                                       </td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </td></tr>\n",
-       "\t<tr><th scope=row>1:4</th><td>AVpjXyCc1cnluZ0-V-Gj</td><td>2017-01-27T01:25:56Z</td><td>2018-01-04T11:52:35Z</td><td></td><td>MUK LUKS   </td><td>Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers    </td><td>Shoes,Shoes</td><td>Black                         </td><td>6.0 in x 6.0 in x 1.0 in</td><td>33977045903</td><td>⋯</td><td>2017-12-07T16:37:00.000Z                         </td><td>FALSE</td><td>Slippers Dot Com</td><td></td><td>NA</td><td>Value    </td><td>6</td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                 </td><td>10,7,6,9,8                                                                                                                       </td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600,http://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </td></tr>\n",
-       "\t<tr><th scope=row>1:5</th><td>AVphGKLPilAPnD_x1Nrm</td><td>2017-01-27T01:25:56Z</td><td>2018-01-18T03:55:18Z</td><td></td><td>MUK LUKS   </td><td>Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers    </td><td>Shoes      </td><td>Grey                          </td><td>6.0 in x 6.0 in x 1.0 in</td><td>33977045958</td><td>⋯</td><td>2017-11-17T21:15:00.000Z                         </td><td> TRUE</td><td>Walmart.com     </td><td></td><td>NA</td><td>Expedited</td><td>6</td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525                                                                                                                                                                 </td><td>10,7,6,9,8                                                                                                                       </td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525,https://www.walmart.com/ip/Women-s-MUK-LUKS-Dawn-Suede-Scuff/41288525,https://www.walmart.com/ip/41288525                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     </td></tr>\n",
+       "\t<tr><th scope=row>1:1</th><td>AVpfEf_hLJeJML431ueH</td><td>2015-05-04T12:13:08Z</td><td>2018-01-29T04:38:43Z</td><td></td><td>Naturalizer</td><td><span style=white-space:pre-wrap>Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals       </span></td><td>Shoes</td><td>Silver,Cream Watercolor Floral</td><td></td><td><span style=white-space:pre-wrap>         NA</span></td><td>⋯</td><td>2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z</td><td>FALSE</td><td>Overstock.com</td><td></td><td>NA</td><td><span style=white-space:pre-wrap>        </span></td><td>S</td><td>https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html</td><td>6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W</td><td>https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245</td></tr>\n",
+       "\t<tr><th scope=row>1:2</th><td>AVpi74XfLJeJML43qZAc</td><td>2017-01-27T01:23:39Z</td><td>2018-01-03T05:21:54Z</td><td></td><td>MUK LUKS   </td><td>Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes</td><td>Shoes</td><td>Grey                          </td><td></td><td>33977045743</td><td>⋯</td><td>2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z</td><td> TRUE</td><td>Walmart.com  </td><td></td><td>NA</td><td>Standard</td><td>6</td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                      </td><td>10,7,6,9,8                                                                                                                       </td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </td></tr>\n",
        "</tbody>\n",
        "</table>\n"
       ],
       "text/latex": [
-       "A data.frame: 5 × 32\n",
+       "A data.frame: 2 × 32\n",
        "\\begin{tabular}{r|lllllllllllllllllllll}\n",
        "  & id & dateAdded & dateUpdated & asins & brand & categories & primaryCategories & colors & dimension & ean & ⋯ & prices.dateSeen & prices.isSale & prices.merchant & prices.offer & prices.returnPolicy & prices.shipping & prices.size & prices.sourceURLs & sizes & sourceURLs\\\\\n",
        "  & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <dbl> & ⋯ & <chr> & <lgl> & <chr> & <chr> & <lgl> & <chr> & <chr> & <chr> & <chr> & <chr>\\\\\n",
        "\\hline\n",
-       "\t1:1 & AVpfEf\\_hLJeJML431ueH & 2015-05-04T12:13:08Z & 2018-01-29T04:38:43Z &  & Naturalizer & Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals        & Shoes       & Silver,Cream Watercolor Floral &                          &          NA & ⋯ & 2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z & FALSE & Overstock.com    &  & NA &           & S & https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html & 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W & https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI\\&searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2\\_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4\\&searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4\\&searchidx=4245\\\\\n",
-       "\t1:2 & AVpi74XfLJeJML43qZAc & 2017-01-27T01:23:39Z & 2018-01-03T05:21:54Z &  & MUK LUKS    & Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes & Shoes       & Grey                           &                          & 33977045743 & ⋯ & 2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z &  TRUE & Walmart.com      &  & NA & Standard  & 6 & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       & 10,7,6,9,8                                                                                                                        & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\\\\n",
-       "\t1:3 & AVpi74XfLJeJML43qZAc & 2017-01-27T01:23:39Z & 2018-01-03T05:21:54Z &  & MUK LUKS    & Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes & Shoes       & Grey                           &                          & 33977045743 & ⋯ & 2017-11-10T15:11:00.000Z,2017-11-18T08:00:00.000Z & FALSE & Slippers Dot Com &  & NA & Value     & 6 & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       & 10,7,6,9,8                                                                                                                        & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\\\\n",
-       "\t1:4 & AVpjXyCc1cnluZ0-V-Gj & 2017-01-27T01:25:56Z & 2018-01-04T11:52:35Z &  & MUK LUKS    & Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers     & Shoes,Shoes & Black                          & 6.0 in x 6.0 in x 1.0 in & 33977045903 & ⋯ & 2017-12-07T16:37:00.000Z                          & FALSE & Slippers Dot Com &  & NA & Value     & 6 & https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                  & 10,7,6,9,8                                                                                                                        & https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600,http://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \\\\\n",
-       "\t1:5 & AVphGKLPilAPnD\\_x1Nrm & 2017-01-27T01:25:56Z & 2018-01-18T03:55:18Z &  & MUK LUKS    & Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers     & Shoes       & Grey                           & 6.0 in x 6.0 in x 1.0 in & 33977045958 & ⋯ & 2017-11-17T21:15:00.000Z                          &  TRUE & Walmart.com      &  & NA & Expedited & 6 & https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525                                                                                                                                                                  & 10,7,6,9,8                                                                                                                        & https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525,https://www.walmart.com/ip/Women-s-MUK-LUKS-Dawn-Suede-Scuff/41288525,https://www.walmart.com/ip/41288525                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     \\\\\n",
+       "\t1:1 & AVpfEf\\_hLJeJML431ueH & 2015-05-04T12:13:08Z & 2018-01-29T04:38:43Z &  & Naturalizer & Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals        & Shoes & Silver,Cream Watercolor Floral &  &          NA & ⋯ & 2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z & FALSE & Overstock.com &  & NA &          & S & https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html & 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W & https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI\\&searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2\\_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4\\&searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4\\&searchidx=4245\\\\\n",
+       "\t1:2 & AVpi74XfLJeJML43qZAc & 2017-01-27T01:23:39Z & 2018-01-03T05:21:54Z &  & MUK LUKS    & Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes & Shoes & Grey                           &  & 33977045743 & ⋯ & 2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z &  TRUE & Walmart.com   &  & NA & Standard & 6 & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       & 10,7,6,9,8                                                                                                                        & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\\\\n",
        "\\end{tabular}\n"
       ],
       "text/markdown": [
        "\n",
-       "A data.frame: 5 × 32\n",
+       "A data.frame: 2 × 32\n",
        "\n",
        "| <!--/--> | id &lt;chr&gt; | dateAdded &lt;chr&gt; | dateUpdated &lt;chr&gt; | asins &lt;chr&gt; | brand &lt;chr&gt; | categories &lt;chr&gt; | primaryCategories &lt;chr&gt; | colors &lt;chr&gt; | dimension &lt;chr&gt; | ean &lt;dbl&gt; | ⋯ ⋯ | prices.dateSeen &lt;chr&gt; | prices.isSale &lt;lgl&gt; | prices.merchant &lt;chr&gt; | prices.offer &lt;chr&gt; | prices.returnPolicy &lt;lgl&gt; | prices.shipping &lt;chr&gt; | prices.size &lt;chr&gt; | prices.sourceURLs &lt;chr&gt; | sizes &lt;chr&gt; | sourceURLs &lt;chr&gt; |\n",
        "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n",
-       "| 1:1 | AVpfEf_hLJeJML431ueH | 2015-05-04T12:13:08Z | 2018-01-29T04:38:43Z | <!----> | Naturalizer | Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals        | Shoes       | Silver,Cream Watercolor Floral | <!----> |          NA | ⋯ | 2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z | FALSE | Overstock.com    | <!----> | NA | <!----> | S | https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html | 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W | https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245 |\n",
-       "| 1:2 | AVpi74XfLJeJML43qZAc | 2017-01-27T01:23:39Z | 2018-01-03T05:21:54Z | <!----> | MUK LUKS    | Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes | Shoes       | Grey                           | <!----> | 33977045743 | ⋯ | 2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z |  TRUE | Walmart.com      | <!----> | NA | Standard  | 6 | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       | 10,7,6,9,8                                                                                                                        | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\n",
-       "| 1:3 | AVpi74XfLJeJML43qZAc | 2017-01-27T01:23:39Z | 2018-01-03T05:21:54Z | <!----> | MUK LUKS    | Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes | Shoes       | Grey                           | <!----> | 33977045743 | ⋯ | 2017-11-10T15:11:00.000Z,2017-11-18T08:00:00.000Z | FALSE | Slippers Dot Com | <!----> | NA | Value     | 6 | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       | 10,7,6,9,8                                                                                                                        | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\n",
-       "| 1:4 | AVpjXyCc1cnluZ0-V-Gj | 2017-01-27T01:25:56Z | 2018-01-04T11:52:35Z | <!----> | MUK LUKS    | Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers     | Shoes,Shoes | Black                          | 6.0 in x 6.0 in x 1.0 in | 33977045903 | ⋯ | 2017-12-07T16:37:00.000Z                          | FALSE | Slippers Dot Com | <!----> | NA | Value     | 6 | https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                  | 10,7,6,9,8                                                                                                                        | https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600,http://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |\n",
-       "| 1:5 | AVphGKLPilAPnD_x1Nrm | 2017-01-27T01:25:56Z | 2018-01-18T03:55:18Z | <!----> | MUK LUKS    | Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers     | Shoes       | Grey                           | 6.0 in x 6.0 in x 1.0 in | 33977045958 | ⋯ | 2017-11-17T21:15:00.000Z                          |  TRUE | Walmart.com      | <!----> | NA | Expedited | 6 | https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525                                                                                                                                                                  | 10,7,6,9,8                                                                                                                        | https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525,https://www.walmart.com/ip/Women-s-MUK-LUKS-Dawn-Suede-Scuff/41288525,https://www.walmart.com/ip/41288525                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |\n",
+       "| 1:1 | AVpfEf_hLJeJML431ueH | 2015-05-04T12:13:08Z | 2018-01-29T04:38:43Z | <!----> | Naturalizer | Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals        | Shoes | Silver,Cream Watercolor Floral | <!----> |          NA | ⋯ | 2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z | FALSE | Overstock.com | <!----> | NA | <!----> | S | https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html | 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W | https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245 |\n",
+       "| 1:2 | AVpi74XfLJeJML43qZAc | 2017-01-27T01:23:39Z | 2018-01-03T05:21:54Z | <!----> | MUK LUKS    | Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes | Shoes | Grey                           | <!----> | 33977045743 | ⋯ | 2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z |  TRUE | Walmart.com   | <!----> | NA | Standard | 6 | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       | 10,7,6,9,8                                                                                                                        | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\n",
        "\n"
       ],
       "text/plain": [
        "    id                   dateAdded            dateUpdated          asins\n",
        "1:1 AVpfEf_hLJeJML431ueH 2015-05-04T12:13:08Z 2018-01-29T04:38:43Z      \n",
        "1:2 AVpi74XfLJeJML43qZAc 2017-01-27T01:23:39Z 2018-01-03T05:21:54Z      \n",
-       "1:3 AVpi74XfLJeJML43qZAc 2017-01-27T01:23:39Z 2018-01-03T05:21:54Z      \n",
-       "1:4 AVpjXyCc1cnluZ0-V-Gj 2017-01-27T01:25:56Z 2018-01-04T11:52:35Z      \n",
-       "1:5 AVphGKLPilAPnD_x1Nrm 2017-01-27T01:25:56Z 2018-01-18T03:55:18Z      \n",
        "    brand      \n",
        "1:1 Naturalizer\n",
        "1:2 MUK LUKS   \n",
-       "1:3 MUK LUKS   \n",
-       "1:4 MUK LUKS   \n",
-       "1:5 MUK LUKS   \n",
        "    categories                                                         \n",
        "1:1 Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals       \n",
        "1:2 Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes\n",
-       "1:3 Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes\n",
-       "1:4 Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers    \n",
-       "1:5 Clothing,Shoes,Women's Shoes,All Women's Shoes,Women's Slippers    \n",
-       "    primaryCategories colors                         dimension               \n",
-       "1:1 Shoes             Silver,Cream Watercolor Floral                         \n",
-       "1:2 Shoes             Grey                                                   \n",
-       "1:3 Shoes             Grey                                                   \n",
-       "1:4 Shoes,Shoes       Black                          6.0 in x 6.0 in x 1.0 in\n",
-       "1:5 Shoes             Grey                           6.0 in x 6.0 in x 1.0 in\n",
-       "    ean         ⋯ prices.dateSeen                                  \n",
-       "1:1          NA ⋯ 2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z\n",
-       "1:2 33977045743 ⋯ 2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z\n",
-       "1:3 33977045743 ⋯ 2017-11-10T15:11:00.000Z,2017-11-18T08:00:00.000Z\n",
-       "1:4 33977045903 ⋯ 2017-12-07T16:37:00.000Z                         \n",
-       "1:5 33977045958 ⋯ 2017-11-17T21:15:00.000Z                         \n",
-       "    prices.isSale prices.merchant  prices.offer prices.returnPolicy\n",
-       "1:1 FALSE         Overstock.com                 NA                 \n",
-       "1:2  TRUE         Walmart.com                   NA                 \n",
-       "1:3 FALSE         Slippers Dot Com              NA                 \n",
-       "1:4 FALSE         Slippers Dot Com              NA                 \n",
-       "1:5  TRUE         Walmart.com                   NA                 \n",
-       "    prices.shipping prices.size\n",
-       "1:1                 S          \n",
-       "1:2 Standard        6          \n",
-       "1:3 Value           6          \n",
-       "1:4 Value           6          \n",
-       "1:5 Expedited       6          \n",
+       "    primaryCategories colors                         dimension ean         ⋯\n",
+       "1:1 Shoes             Silver,Cream Watercolor Floral                    NA ⋯\n",
+       "1:2 Shoes             Grey                                     33977045743 ⋯\n",
+       "    prices.dateSeen                                   prices.isSale\n",
+       "1:1 2017-03-25T09:19:24.819Z,2017-03-25T09:19:19.600Z FALSE        \n",
+       "1:2 2017-12-08T14:24:00.000Z,2017-11-01T02:52:00.000Z  TRUE        \n",
+       "    prices.merchant prices.offer prices.returnPolicy prices.shipping\n",
+       "1:1 Overstock.com                NA                                 \n",
+       "1:2 Walmart.com                  NA                  Standard       \n",
+       "    prices.size\n",
+       "1:1 S          \n",
+       "1:2 6          \n",
        "    prices.sourceURLs                                                                                                                                                                                                                            \n",
        "1:1 https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html\n",
        "1:2 https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                      \n",
-       "1:3 https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                      \n",
-       "1:4 https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                 \n",
-       "1:5 https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525                                                                                                                                                                 \n",
        "    sizes                                                                                                                            \n",
        "1:1 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W\n",
        "1:2 10,7,6,9,8                                                                                                                       \n",
-       "1:3 10,7,6,9,8                                                                                                                       \n",
-       "1:4 10,7,6,9,8                                                                                                                       \n",
-       "1:5 10,7,6,9,8                                                                                                                       \n",
        "    sourceURLs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \n",
        "1:1 https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&searchidx=4245\n",
-       "1:2 https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \n",
-       "1:3 https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \n",
-       "1:4 https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600,http://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288600                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \n",
-       "1:5 https://www.walmart.com/ip/MUK-LUKS-Womens-Dawn-Suede-Scuff-Slipper/41288525,https://www.walmart.com/ip/Women-s-MUK-LUKS-Dawn-Suede-Scuff/41288525,https://www.walmart.com/ip/41288525                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     "
+       "1:2 https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "
       ]
      },
      "metadata": {},
@@ -1733,25 +1694,301 @@
    "source": [
     "##appending dataframes\n",
     "df3 = smartbind(df1, df2)\n",
-    "head(df3,5)"
+    "head(df3,2)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "1fa05df4",
+   "execution_count": 15,
+   "id": "1a0abbee",
    "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-25T02:48:42.210991Z",
+     "iopub.status.busy": "2024-06-25T02:48:42.209443Z",
+     "iopub.status.idle": "2024-06-25T02:48:42.247948Z",
+     "shell.execute_reply": "2024-06-25T02:48:42.245584Z"
+    },
     "papermill": {
-     "duration": 0.031846,
-     "end_time": "2024-06-24T23:31:38.553373",
+     "duration": 0.063018,
+     "end_time": "2024-06-25T02:48:42.250841",
      "exception": false,
-     "start_time": "2024-06-24T23:31:38.521527",
+     "start_time": "2024-06-25T02:48:42.187823",
      "status": "completed"
     },
     "tags": []
    },
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<style>\n",
+       ".list-inline {list-style: none; margin:0; padding: 0}\n",
+       ".list-inline>li {display: inline-block}\n",
+       ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+       "</style>\n",
+       "<ol class=list-inline><li>'id'</li><li>'dateAdded'</li><li>'dateUpdated'</li><li>'asins'</li><li>'brand'</li><li>'categories'</li><li>'primaryCategories'</li><li>'colors'</li><li>'dimension'</li><li>'ean'</li><li>'imageURLs'</li><li>'keys'</li><li>'manufacturer'</li><li>'manufacturerNumber'</li><li>'name'</li><li>'prices.amountMax'</li><li>'prices.amountMin'</li><li>'prices.availability'</li><li>'prices.color'</li><li>'prices.condition'</li><li>'prices.currency'</li><li>'prices.dateAdded'</li><li>'prices.isSale'</li><li>'prices.merchant'</li><li>'prices.offer'</li><li>'prices.returnPolicy'</li><li>'prices.shipping'</li><li>'prices.size'</li><li>'prices.sourceURLs'</li><li>'sizes'</li><li>'sourceURLs'</li></ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 'id'\n",
+       "\\item 'dateAdded'\n",
+       "\\item 'dateUpdated'\n",
+       "\\item 'asins'\n",
+       "\\item 'brand'\n",
+       "\\item 'categories'\n",
+       "\\item 'primaryCategories'\n",
+       "\\item 'colors'\n",
+       "\\item 'dimension'\n",
+       "\\item 'ean'\n",
+       "\\item 'imageURLs'\n",
+       "\\item 'keys'\n",
+       "\\item 'manufacturer'\n",
+       "\\item 'manufacturerNumber'\n",
+       "\\item 'name'\n",
+       "\\item 'prices.amountMax'\n",
+       "\\item 'prices.amountMin'\n",
+       "\\item 'prices.availability'\n",
+       "\\item 'prices.color'\n",
+       "\\item 'prices.condition'\n",
+       "\\item 'prices.currency'\n",
+       "\\item 'prices.dateAdded'\n",
+       "\\item 'prices.isSale'\n",
+       "\\item 'prices.merchant'\n",
+       "\\item 'prices.offer'\n",
+       "\\item 'prices.returnPolicy'\n",
+       "\\item 'prices.shipping'\n",
+       "\\item 'prices.size'\n",
+       "\\item 'prices.sourceURLs'\n",
+       "\\item 'sizes'\n",
+       "\\item 'sourceURLs'\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 'id'\n",
+       "2. 'dateAdded'\n",
+       "3. 'dateUpdated'\n",
+       "4. 'asins'\n",
+       "5. 'brand'\n",
+       "6. 'categories'\n",
+       "7. 'primaryCategories'\n",
+       "8. 'colors'\n",
+       "9. 'dimension'\n",
+       "10. 'ean'\n",
+       "11. 'imageURLs'\n",
+       "12. 'keys'\n",
+       "13. 'manufacturer'\n",
+       "14. 'manufacturerNumber'\n",
+       "15. 'name'\n",
+       "16. 'prices.amountMax'\n",
+       "17. 'prices.amountMin'\n",
+       "18. 'prices.availability'\n",
+       "19. 'prices.color'\n",
+       "20. 'prices.condition'\n",
+       "21. 'prices.currency'\n",
+       "22. 'prices.dateAdded'\n",
+       "23. 'prices.isSale'\n",
+       "24. 'prices.merchant'\n",
+       "25. 'prices.offer'\n",
+       "26. 'prices.returnPolicy'\n",
+       "27. 'prices.shipping'\n",
+       "28. 'prices.size'\n",
+       "29. 'prices.sourceURLs'\n",
+       "30. 'sizes'\n",
+       "31. 'sourceURLs'\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       " [1] \"id\"                  \"dateAdded\"           \"dateUpdated\"        \n",
+       " [4] \"asins\"               \"brand\"               \"categories\"         \n",
+       " [7] \"primaryCategories\"   \"colors\"              \"dimension\"          \n",
+       "[10] \"ean\"                 \"imageURLs\"           \"keys\"               \n",
+       "[13] \"manufacturer\"        \"manufacturerNumber\"  \"name\"               \n",
+       "[16] \"prices.amountMax\"    \"prices.amountMin\"    \"prices.availability\"\n",
+       "[19] \"prices.color\"        \"prices.condition\"    \"prices.currency\"    \n",
+       "[22] \"prices.dateAdded\"    \"prices.isSale\"       \"prices.merchant\"    \n",
+       "[25] \"prices.offer\"        \"prices.returnPolicy\" \"prices.shipping\"    \n",
+       "[28] \"prices.size\"         \"prices.sourceURLs\"   \"sizes\"              \n",
+       "[31] \"sourceURLs\"         "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "df3 = subset(df3, select = -c(prices.dateSeen) )\n",
+    "\n",
+    "colnames(df3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "0f698bdf",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-25T02:48:42.293636Z",
+     "iopub.status.busy": "2024-06-25T02:48:42.292074Z",
+     "iopub.status.idle": "2024-06-25T02:48:42.425497Z",
+     "shell.execute_reply": "2024-06-25T02:48:42.423025Z"
+    },
+    "papermill": {
+     "duration": 0.158048,
+     "end_time": "2024-06-25T02:48:42.428467",
+     "exception": false,
+     "start_time": "2024-06-25T02:48:42.270419",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<table class=\"dataframe\">\n",
+       "<caption>A data.frame: 1 × 31</caption>\n",
+       "<thead>\n",
+       "\t<tr><th></th><th scope=col>id</th><th scope=col>dateAdded</th><th scope=col>dateUpdated</th><th scope=col>asins</th><th scope=col>brand</th><th scope=col>categories</th><th scope=col>primaryCategories</th><th scope=col>colors</th><th scope=col>dimension</th><th scope=col>ean</th><th scope=col>⋯</th><th scope=col>prices.dateAdded</th><th scope=col>prices.isSale</th><th scope=col>prices.merchant</th><th scope=col>prices.offer</th><th scope=col>prices.returnPolicy</th><th scope=col>prices.shipping</th><th scope=col>prices.size</th><th scope=col>prices.sourceURLs</th><th scope=col>sizes</th><th scope=col>sourceURLs</th></tr>\n",
+       "\t<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dttm&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>⋯</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th></tr>\n",
+       "</thead>\n",
+       "<tbody>\n",
+       "\t<tr><th scope=row>1:1</th><td>AVpfEf_hLJeJML431ueH</td><td>2015-05-04</td><td>2018-01-29T04:38:43Z</td><td></td><td>Naturalizer</td><td>Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals</td><td>Shoes</td><td>Silver,Cream Watercolor Floral</td><td></td><td>NA</td><td>⋯</td><td>2017-03-28T11:40:25Z</td><td>FALSE</td><td>Overstock.com</td><td></td><td>NA</td><td></td><td>S</td><td>https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html</td><td>6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W</td><td>https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245</td></tr>\n",
+       "</tbody>\n",
+       "</table>\n"
+      ],
+      "text/latex": [
+       "A data.frame: 1 × 31\n",
+       "\\begin{tabular}{r|lllllllllllllllllllll}\n",
+       "  & id & dateAdded & dateUpdated & asins & brand & categories & primaryCategories & colors & dimension & ean & ⋯ & prices.dateAdded & prices.isSale & prices.merchant & prices.offer & prices.returnPolicy & prices.shipping & prices.size & prices.sourceURLs & sizes & sourceURLs\\\\\n",
+       "  & <chr> & <dttm> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <dbl> & ⋯ & <chr> & <lgl> & <chr> & <chr> & <lgl> & <chr> & <chr> & <chr> & <chr> & <chr>\\\\\n",
+       "\\hline\n",
+       "\t1:1 & AVpfEf\\_hLJeJML431ueH & 2015-05-04 & 2018-01-29T04:38:43Z &  & Naturalizer & Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals & Shoes & Silver,Cream Watercolor Floral &  & NA & ⋯ & 2017-03-28T11:40:25Z & FALSE & Overstock.com &  & NA &  & S & https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html & 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W & https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI\\&searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2\\_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4\\&searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4\\&searchidx=4245\\\\\n",
+       "\\end{tabular}\n"
+      ],
+      "text/markdown": [
+       "\n",
+       "A data.frame: 1 × 31\n",
+       "\n",
+       "| <!--/--> | id &lt;chr&gt; | dateAdded &lt;dttm&gt; | dateUpdated &lt;chr&gt; | asins &lt;chr&gt; | brand &lt;chr&gt; | categories &lt;chr&gt; | primaryCategories &lt;chr&gt; | colors &lt;chr&gt; | dimension &lt;chr&gt; | ean &lt;dbl&gt; | ⋯ ⋯ | prices.dateAdded &lt;chr&gt; | prices.isSale &lt;lgl&gt; | prices.merchant &lt;chr&gt; | prices.offer &lt;chr&gt; | prices.returnPolicy &lt;lgl&gt; | prices.shipping &lt;chr&gt; | prices.size &lt;chr&gt; | prices.sourceURLs &lt;chr&gt; | sizes &lt;chr&gt; | sourceURLs &lt;chr&gt; |\n",
+       "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n",
+       "| 1:1 | AVpfEf_hLJeJML431ueH | 2015-05-04 | 2018-01-29T04:38:43Z | <!----> | Naturalizer | Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals | Shoes | Silver,Cream Watercolor Floral | <!----> | NA | ⋯ | 2017-03-28T11:40:25Z | FALSE | Overstock.com | <!----> | NA | <!----> | S | https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html | 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W | https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245 |\n",
+       "\n"
+      ],
+      "text/plain": [
+       "    id                   dateAdded  dateUpdated          asins brand      \n",
+       "1:1 AVpfEf_hLJeJML431ueH 2015-05-04 2018-01-29T04:38:43Z       Naturalizer\n",
+       "    categories                                                  \n",
+       "1:1 Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals\n",
+       "    primaryCategories colors                         dimension ean ⋯\n",
+       "1:1 Shoes             Silver,Cream Watercolor Floral           NA  ⋯\n",
+       "    prices.dateAdded     prices.isSale prices.merchant prices.offer\n",
+       "1:1 2017-03-28T11:40:25Z FALSE         Overstock.com               \n",
+       "    prices.returnPolicy prices.shipping prices.size\n",
+       "1:1 NA                                  S          \n",
+       "    prices.sourceURLs                                                                                                                                                                                                                            \n",
+       "1:1 https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html\n",
+       "    sizes                                                                                                                            \n",
+       "1:1 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W\n",
+       "    sourceURLs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \n",
+       "1:1 https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&searchidx=4245"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "#convert UNIX dateAdded to date using Lubridate\n",
+    "\n",
+    "df3$dateAdded <- as.POSIXct(df3$dateAdded, origin = \"1970-01-01\")\n",
+    "\n",
+    "head(df3,1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "9af8297f",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-25T02:48:42.472803Z",
+     "iopub.status.busy": "2024-06-25T02:48:42.471292Z",
+     "iopub.status.idle": "2024-06-25T02:48:42.599933Z",
+     "shell.execute_reply": "2024-06-25T02:48:42.597477Z"
+    },
+    "papermill": {
+     "duration": 0.154196,
+     "end_time": "2024-06-25T02:48:42.602959",
+     "exception": false,
+     "start_time": "2024-06-25T02:48:42.448763",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<table class=\"dataframe\">\n",
+       "<caption>A data.frame: 1 × 31</caption>\n",
+       "<thead>\n",
+       "\t<tr><th></th><th scope=col>id</th><th scope=col>dateAdded</th><th scope=col>dateUpdated</th><th scope=col>asins</th><th scope=col>brand</th><th scope=col>categories</th><th scope=col>primaryCategories</th><th scope=col>colors</th><th scope=col>dimension</th><th scope=col>ean</th><th scope=col>⋯</th><th scope=col>prices.dateAdded</th><th scope=col>prices.isSale</th><th scope=col>prices.merchant</th><th scope=col>prices.offer</th><th scope=col>prices.returnPolicy</th><th scope=col>prices.shipping</th><th scope=col>prices.size</th><th scope=col>prices.sourceURLs</th><th scope=col>sizes</th><th scope=col>sourceURLs</th></tr>\n",
+       "\t<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dttm&gt;</th><th scope=col>&lt;dttm&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>⋯</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th></tr>\n",
+       "</thead>\n",
+       "<tbody>\n",
+       "\t<tr><th scope=row>1:1</th><td>AVpfEf_hLJeJML431ueH</td><td>2015-05-04</td><td>2018-01-29</td><td></td><td>Naturalizer</td><td>Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals</td><td>Shoes</td><td>Silver,Cream Watercolor Floral</td><td></td><td>NA</td><td>⋯</td><td>2017-03-28T11:40:25Z</td><td>FALSE</td><td>Overstock.com</td><td></td><td>NA</td><td></td><td>S</td><td>https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html</td><td>6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W</td><td>https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245</td></tr>\n",
+       "</tbody>\n",
+       "</table>\n"
+      ],
+      "text/latex": [
+       "A data.frame: 1 × 31\n",
+       "\\begin{tabular}{r|lllllllllllllllllllll}\n",
+       "  & id & dateAdded & dateUpdated & asins & brand & categories & primaryCategories & colors & dimension & ean & ⋯ & prices.dateAdded & prices.isSale & prices.merchant & prices.offer & prices.returnPolicy & prices.shipping & prices.size & prices.sourceURLs & sizes & sourceURLs\\\\\n",
+       "  & <chr> & <dttm> & <dttm> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <dbl> & ⋯ & <chr> & <lgl> & <chr> & <chr> & <lgl> & <chr> & <chr> & <chr> & <chr> & <chr>\\\\\n",
+       "\\hline\n",
+       "\t1:1 & AVpfEf\\_hLJeJML431ueH & 2015-05-04 & 2018-01-29 &  & Naturalizer & Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals & Shoes & Silver,Cream Watercolor Floral &  & NA & ⋯ & 2017-03-28T11:40:25Z & FALSE & Overstock.com &  & NA &  & S & https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html & 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W & https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI\\&searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2\\_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4\\&searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4\\&searchidx=4245\\\\\n",
+       "\\end{tabular}\n"
+      ],
+      "text/markdown": [
+       "\n",
+       "A data.frame: 1 × 31\n",
+       "\n",
+       "| <!--/--> | id &lt;chr&gt; | dateAdded &lt;dttm&gt; | dateUpdated &lt;dttm&gt; | asins &lt;chr&gt; | brand &lt;chr&gt; | categories &lt;chr&gt; | primaryCategories &lt;chr&gt; | colors &lt;chr&gt; | dimension &lt;chr&gt; | ean &lt;dbl&gt; | ⋯ ⋯ | prices.dateAdded &lt;chr&gt; | prices.isSale &lt;lgl&gt; | prices.merchant &lt;chr&gt; | prices.offer &lt;chr&gt; | prices.returnPolicy &lt;lgl&gt; | prices.shipping &lt;chr&gt; | prices.size &lt;chr&gt; | prices.sourceURLs &lt;chr&gt; | sizes &lt;chr&gt; | sourceURLs &lt;chr&gt; |\n",
+       "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n",
+       "| 1:1 | AVpfEf_hLJeJML431ueH | 2015-05-04 | 2018-01-29 | <!----> | Naturalizer | Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals | Shoes | Silver,Cream Watercolor Floral | <!----> | NA | ⋯ | 2017-03-28T11:40:25Z | FALSE | Overstock.com | <!----> | NA | <!----> | S | https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html | 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W | https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245 |\n",
+       "\n"
+      ],
+      "text/plain": [
+       "    id                   dateAdded  dateUpdated asins brand      \n",
+       "1:1 AVpfEf_hLJeJML431ueH 2015-05-04 2018-01-29        Naturalizer\n",
+       "    categories                                                  \n",
+       "1:1 Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals\n",
+       "    primaryCategories colors                         dimension ean ⋯\n",
+       "1:1 Shoes             Silver,Cream Watercolor Floral           NA  ⋯\n",
+       "    prices.dateAdded     prices.isSale prices.merchant prices.offer\n",
+       "1:1 2017-03-28T11:40:25Z FALSE         Overstock.com               \n",
+       "    prices.returnPolicy prices.shipping prices.size\n",
+       "1:1 NA                                  S          \n",
+       "    prices.sourceURLs                                                                                                                                                                                                                            \n",
+       "1:1 https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html\n",
+       "    sizes                                                                                                                            \n",
+       "1:1 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W\n",
+       "    sourceURLs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \n",
+       "1:1 https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&searchidx=4245"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "#convert UNIX dateAdded to date using Lubridate\n",
+    "\n",
+    "df3$dateUpdated <- as.POSIXct(df3$dateUpdated, origin = \"1970-01-01\")\n",
+    "\n",
+    "head(df3,1)"
+   ]
   }
  ],
  "metadata": {
@@ -1785,14 +2022,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 14.514505,
-   "end_time": "2024-06-24T23:31:38.701648",
+   "duration": 12.292792,
+   "end_time": "2024-06-25T02:48:42.745843",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-06-24T23:31:24.187143",
+   "start_time": "2024-06-25T02:48:30.453051",
    "version": "2.5.0"
   }
  },
