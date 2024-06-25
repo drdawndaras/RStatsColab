@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "ecf45a2c",
+   "id": "7b144493",
    "metadata": {
     "_execution_state": "idle",
     "_uuid": "051d70d956493feee0c6d64651c6a088724dca2a",
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:33.503259Z",
-     "iopub.status.busy": "2024-06-25T02:48:33.501169Z",
-     "iopub.status.idle": "2024-06-25T02:48:34.580122Z",
-     "shell.execute_reply": "2024-06-25T02:48:34.578373Z"
+     "iopub.execute_input": "2024-06-25T04:05:15.286720Z",
+     "iopub.status.busy": "2024-06-25T04:05:15.284324Z",
+     "iopub.status.idle": "2024-06-25T04:05:16.561414Z",
+     "shell.execute_reply": "2024-06-25T04:05:16.558866Z"
     },
     "papermill": {
-     "duration": 1.095103,
-     "end_time": "2024-06-25T02:48:34.582435",
+     "duration": 1.298872,
+     "end_time": "2024-06-25T04:05:16.565054",
      "exception": false,
-     "start_time": "2024-06-25T02:48:33.487332",
+     "start_time": "2024-06-25T04:05:15.266182",
      "status": "completed"
     },
     "tags": []
@@ -77,19 +77,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "069bb1cd",
+   "id": "de3d372d",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:34.640487Z",
-     "iopub.status.busy": "2024-06-25T02:48:34.611278Z",
-     "iopub.status.idle": "2024-06-25T02:48:38.600805Z",
-     "shell.execute_reply": "2024-06-25T02:48:38.599015Z"
+     "iopub.execute_input": "2024-06-25T04:05:16.636144Z",
+     "iopub.status.busy": "2024-06-25T04:05:16.601529Z",
+     "iopub.status.idle": "2024-06-25T04:05:21.337712Z",
+     "shell.execute_reply": "2024-06-25T04:05:21.335246Z"
     },
     "papermill": {
-     "duration": 4.007671,
-     "end_time": "2024-06-25T02:48:38.603999",
+     "duration": 4.759201,
+     "end_time": "2024-06-25T04:05:21.341668",
      "exception": false,
-     "start_time": "2024-06-25T02:48:34.596328",
+     "start_time": "2024-06-25T04:05:16.582467",
      "status": "completed"
     },
     "tags": []
@@ -269,13 +269,13 @@
     }
    },
    "cell_type": "markdown",
-   "id": "f9df790d",
+   "id": "bc872282",
    "metadata": {
     "papermill": {
-     "duration": 0.014765,
-     "end_time": "2024-06-25T02:48:38.633577",
+     "duration": 0.018781,
+     "end_time": "2024-06-25T04:05:21.379226",
      "exception": false,
-     "start_time": "2024-06-25T02:48:38.618812",
+     "start_time": "2024-06-25T04:05:21.360445",
      "status": "completed"
     },
     "tags": []
@@ -291,13 +291,13 @@
     }
    },
    "cell_type": "markdown",
-   "id": "c15b3d0a",
+   "id": "797f0f3f",
    "metadata": {
     "papermill": {
-     "duration": 0.014578,
-     "end_time": "2024-06-25T02:48:38.662594",
+     "duration": 0.018519,
+     "end_time": "2024-06-25T04:05:21.416530",
      "exception": false,
-     "start_time": "2024-06-25T02:48:38.648016",
+     "start_time": "2024-06-25T04:05:21.398011",
      "status": "completed"
     },
     "tags": []
@@ -308,13 +308,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "ed7c0dcf",
+   "id": "d0603ddc",
    "metadata": {
     "papermill": {
-     "duration": 0.014772,
-     "end_time": "2024-06-25T02:48:38.691879",
+     "duration": 0.018774,
+     "end_time": "2024-06-25T04:05:21.454214",
      "exception": false,
-     "start_time": "2024-06-25T02:48:38.677107",
+     "start_time": "2024-06-25T04:05:21.435440",
      "status": "completed"
     },
     "tags": []
@@ -326,13 +326,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "423e13f3",
+   "id": "985501eb",
    "metadata": {
     "papermill": {
-     "duration": 0.014975,
-     "end_time": "2024-06-25T02:48:38.721585",
+     "duration": 0.018597,
+     "end_time": "2024-06-25T04:05:21.491693",
      "exception": false,
-     "start_time": "2024-06-25T02:48:38.706610",
+     "start_time": "2024-06-25T04:05:21.473096",
      "status": "completed"
     },
     "tags": []
@@ -344,19 +344,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "5420b55b",
+   "id": "f6f63bf1",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:38.754825Z",
-     "iopub.status.busy": "2024-06-25T02:48:38.753218Z",
-     "iopub.status.idle": "2024-06-25T02:48:38.773507Z",
-     "shell.execute_reply": "2024-06-25T02:48:38.771274Z"
+     "iopub.execute_input": "2024-06-25T04:05:21.532673Z",
+     "iopub.status.busy": "2024-06-25T04:05:21.530867Z",
+     "iopub.status.idle": "2024-06-25T04:05:21.550710Z",
+     "shell.execute_reply": "2024-06-25T04:05:21.548721Z"
     },
     "papermill": {
-     "duration": 0.040101,
-     "end_time": "2024-06-25T02:48:38.776374",
+     "duration": 0.043364,
+     "end_time": "2024-06-25T04:05:21.553525",
      "exception": false,
-     "start_time": "2024-06-25T02:48:38.736273",
+     "start_time": "2024-06-25T04:05:21.510161",
      "status": "completed"
     },
     "tags": []
@@ -388,19 +388,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "427968ef",
+   "id": "5bc1a997",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:38.810161Z",
-     "iopub.status.busy": "2024-06-25T02:48:38.808578Z",
-     "iopub.status.idle": "2024-06-25T02:48:38.841998Z",
-     "shell.execute_reply": "2024-06-25T02:48:38.839745Z"
+     "iopub.execute_input": "2024-06-25T04:05:21.595146Z",
+     "iopub.status.busy": "2024-06-25T04:05:21.593339Z",
+     "iopub.status.idle": "2024-06-25T04:05:21.629339Z",
+     "shell.execute_reply": "2024-06-25T04:05:21.626827Z"
     },
     "papermill": {
-     "duration": 0.053131,
-     "end_time": "2024-06-25T02:48:38.844854",
+     "duration": 0.06059,
+     "end_time": "2024-06-25T04:05:21.632823",
      "exception": false,
-     "start_time": "2024-06-25T02:48:38.791723",
+     "start_time": "2024-06-25T04:05:21.572233",
      "status": "completed"
     },
     "tags": []
@@ -465,19 +465,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "bb019097",
+   "id": "f7bd7f9d",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:38.879472Z",
-     "iopub.status.busy": "2024-06-25T02:48:38.877933Z",
-     "iopub.status.idle": "2024-06-25T02:48:40.372577Z",
-     "shell.execute_reply": "2024-06-25T02:48:40.369684Z"
+     "iopub.execute_input": "2024-06-25T04:05:21.675390Z",
+     "iopub.status.busy": "2024-06-25T04:05:21.673238Z",
+     "iopub.status.idle": "2024-06-25T04:05:23.248463Z",
+     "shell.execute_reply": "2024-06-25T04:05:23.245434Z"
     },
     "papermill": {
-     "duration": 1.516024,
-     "end_time": "2024-06-25T02:48:40.376297",
+     "duration": 1.600652,
+     "end_time": "2024-06-25T04:05:23.252574",
      "exception": false,
-     "start_time": "2024-06-25T02:48:38.860273",
+     "start_time": "2024-06-25T04:05:21.651922",
      "status": "completed"
     },
     "tags": []
@@ -668,19 +668,19 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "8f767772",
+   "id": "27b496d3",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:40.414680Z",
-     "iopub.status.busy": "2024-06-25T02:48:40.412865Z",
-     "iopub.status.idle": "2024-06-25T02:48:41.133422Z",
-     "shell.execute_reply": "2024-06-25T02:48:41.130659Z"
+     "iopub.execute_input": "2024-06-25T04:05:23.298984Z",
+     "iopub.status.busy": "2024-06-25T04:05:23.297218Z",
+     "iopub.status.idle": "2024-06-25T04:05:24.033534Z",
+     "shell.execute_reply": "2024-06-25T04:05:24.030384Z"
     },
     "papermill": {
-     "duration": 0.742602,
-     "end_time": "2024-06-25T02:48:41.136278",
+     "duration": 0.76289,
+     "end_time": "2024-06-25T04:05:24.037039",
      "exception": false,
-     "start_time": "2024-06-25T02:48:40.393676",
+     "start_time": "2024-06-25T04:05:23.274149",
      "status": "completed"
     },
     "tags": []
@@ -848,13 +848,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "245f388f",
+   "id": "3f28bb67",
    "metadata": {
     "papermill": {
-     "duration": 0.017021,
-     "end_time": "2024-06-25T02:48:41.171229",
+     "duration": 0.021699,
+     "end_time": "2024-06-25T04:05:24.082040",
      "exception": false,
-     "start_time": "2024-06-25T02:48:41.154208",
+     "start_time": "2024-06-25T04:05:24.060341",
      "status": "completed"
     },
     "tags": []
@@ -866,19 +866,19 @@
   {
    "cell_type": "code",
    "execution_count": 7,
-   "id": "0f8a131c",
+   "id": "a5a93257",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:41.209106Z",
-     "iopub.status.busy": "2024-06-25T02:48:41.207519Z",
-     "iopub.status.idle": "2024-06-25T02:48:41.226925Z",
-     "shell.execute_reply": "2024-06-25T02:48:41.225125Z"
+     "iopub.execute_input": "2024-06-25T04:05:24.128803Z",
+     "iopub.status.busy": "2024-06-25T04:05:24.127013Z",
+     "iopub.status.idle": "2024-06-25T04:05:24.148727Z",
+     "shell.execute_reply": "2024-06-25T04:05:24.146086Z"
     },
     "papermill": {
-     "duration": 0.040805,
-     "end_time": "2024-06-25T02:48:41.229167",
+     "duration": 0.048486,
+     "end_time": "2024-06-25T04:05:24.152153",
      "exception": false,
-     "start_time": "2024-06-25T02:48:41.188362",
+     "start_time": "2024-06-25T04:05:24.103667",
      "status": "completed"
     },
     "tags": []
@@ -996,19 +996,19 @@
   {
    "cell_type": "code",
    "execution_count": 8,
-   "id": "530689bf",
+   "id": "2c9b30ae",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:41.268053Z",
-     "iopub.status.busy": "2024-06-25T02:48:41.266489Z",
-     "iopub.status.idle": "2024-06-25T02:48:41.283883Z",
-     "shell.execute_reply": "2024-06-25T02:48:41.282219Z"
+     "iopub.execute_input": "2024-06-25T04:05:24.199229Z",
+     "iopub.status.busy": "2024-06-25T04:05:24.197456Z",
+     "iopub.status.idle": "2024-06-25T04:05:24.219608Z",
+     "shell.execute_reply": "2024-06-25T04:05:24.216917Z"
     },
     "papermill": {
-     "duration": 0.039426,
-     "end_time": "2024-06-25T02:48:41.286203",
+     "duration": 0.049623,
+     "end_time": "2024-06-25T04:05:24.223291",
      "exception": false,
-     "start_time": "2024-06-25T02:48:41.246777",
+     "start_time": "2024-06-25T04:05:24.173668",
      "status": "completed"
     },
     "tags": []
@@ -1121,19 +1121,19 @@
   {
    "cell_type": "code",
    "execution_count": 9,
-   "id": "a6019b36",
+   "id": "2c2e765d",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:41.326728Z",
-     "iopub.status.busy": "2024-06-25T02:48:41.325134Z",
-     "iopub.status.idle": "2024-06-25T02:48:41.340386Z",
-     "shell.execute_reply": "2024-06-25T02:48:41.338651Z"
+     "iopub.execute_input": "2024-06-25T04:05:24.271743Z",
+     "iopub.status.busy": "2024-06-25T04:05:24.269922Z",
+     "iopub.status.idle": "2024-06-25T04:05:24.287763Z",
+     "shell.execute_reply": "2024-06-25T04:05:24.285743Z"
     },
     "papermill": {
-     "duration": 0.037841,
-     "end_time": "2024-06-25T02:48:41.342742",
+     "duration": 0.045723,
+     "end_time": "2024-06-25T04:05:24.291192",
      "exception": false,
-     "start_time": "2024-06-25T02:48:41.304901",
+     "start_time": "2024-06-25T04:05:24.245469",
      "status": "completed"
     },
     "tags": []
@@ -1147,19 +1147,19 @@
   {
    "cell_type": "code",
    "execution_count": 10,
-   "id": "1e2a4dfb",
+   "id": "cbee5bbf",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:41.381656Z",
-     "iopub.status.busy": "2024-06-25T02:48:41.380109Z",
-     "iopub.status.idle": "2024-06-25T02:48:41.505460Z",
-     "shell.execute_reply": "2024-06-25T02:48:41.503700Z"
+     "iopub.execute_input": "2024-06-25T04:05:24.339916Z",
+     "iopub.status.busy": "2024-06-25T04:05:24.338125Z",
+     "iopub.status.idle": "2024-06-25T04:05:24.478989Z",
+     "shell.execute_reply": "2024-06-25T04:05:24.476822Z"
     },
     "papermill": {
-     "duration": 0.147359,
-     "end_time": "2024-06-25T02:48:41.507861",
+     "duration": 0.168588,
+     "end_time": "2024-06-25T04:05:24.481982",
      "exception": false,
-     "start_time": "2024-06-25T02:48:41.360502",
+     "start_time": "2024-06-25T04:05:24.313394",
      "status": "completed"
     },
     "tags": []
@@ -1274,19 +1274,19 @@
   {
    "cell_type": "code",
    "execution_count": 11,
-   "id": "2addd6cd",
+   "id": "b59a111f",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:41.547693Z",
-     "iopub.status.busy": "2024-06-25T02:48:41.546154Z",
-     "iopub.status.idle": "2024-06-25T02:48:41.563198Z",
-     "shell.execute_reply": "2024-06-25T02:48:41.561563Z"
+     "iopub.execute_input": "2024-06-25T04:05:24.531393Z",
+     "iopub.status.busy": "2024-06-25T04:05:24.529718Z",
+     "iopub.status.idle": "2024-06-25T04:05:24.551329Z",
+     "shell.execute_reply": "2024-06-25T04:05:24.548719Z"
     },
     "papermill": {
-     "duration": 0.039543,
-     "end_time": "2024-06-25T02:48:41.565458",
+     "duration": 0.049447,
+     "end_time": "2024-06-25T04:05:24.554650",
      "exception": false,
-     "start_time": "2024-06-25T02:48:41.525915",
+     "start_time": "2024-06-25T04:05:24.505203",
      "status": "completed"
     },
     "tags": []
@@ -1399,207 +1399,19 @@
   {
    "cell_type": "code",
    "execution_count": 12,
-   "id": "73fbf88f",
+   "id": "02d413ae",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:41.605255Z",
-     "iopub.status.busy": "2024-06-25T02:48:41.603674Z",
-     "iopub.status.idle": "2024-06-25T02:48:41.632871Z",
-     "shell.execute_reply": "2024-06-25T02:48:41.631168Z"
+     "iopub.execute_input": "2024-06-25T04:05:24.603909Z",
+     "iopub.status.busy": "2024-06-25T04:05:24.602081Z",
+     "iopub.status.idle": "2024-06-25T04:05:25.080889Z",
+     "shell.execute_reply": "2024-06-25T04:05:25.078037Z"
     },
     "papermill": {
-     "duration": 0.051593,
-     "end_time": "2024-06-25T02:48:41.635151",
+     "duration": 0.507353,
+     "end_time": "2024-06-25T04:05:25.084366",
      "exception": false,
-     "start_time": "2024-06-25T02:48:41.583558",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "      id             dateAdded         dateUpdated           asins          \n",
-       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
-       " Class :character   Class :character   Class :character   Class :character  \n",
-       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "    brand            categories        primaryCategories     colors         \n",
-       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
-       " Class :character   Class :character   Class :character   Class :character  \n",
-       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "  dimension              ean             imageURLs             keys          \n",
-       " Length:10000       Min.   :3.398e+10   Length:10000       Length:10000      \n",
-       " Class :character   1st Qu.:7.277e+11   Class :character   Class :character  \n",
-       " Mode  :character   Median :8.702e+11   Mode  :character   Mode  :character  \n",
-       "                    Mean   :7.714e+11                                        \n",
-       "                    3rd Qu.:8.861e+11                                        \n",
-       "                    Max.   :8.899e+11                                        \n",
-       "                    NA's   :9329                                             \n",
-       " manufacturer       manufacturerNumber     name           prices.amountMax\n",
-       " Length:10000       Length:10000       Length:10000       Min.   :  5.87  \n",
-       " Class :character   Class :character   Class :character   1st Qu.: 59.99  \n",
-       " Mode  :character   Mode  :character   Mode  :character   Median : 64.99  \n",
-       "                                                          Mean   : 69.22  \n",
-       "                                                          3rd Qu.: 79.99  \n",
-       "                                                          Max.   :359.95  \n",
-       "                                                                          \n",
-       " prices.amountMin prices.availability prices.color       prices.condition  \n",
-       " Min.   :  4.88   Length:10000        Length:10000       Length:10000      \n",
-       " 1st Qu.: 37.49   Class :character    Class :character   Class :character  \n",
-       " Median : 49.99   Mode  :character    Mode  :character   Mode  :character  \n",
-       " Mean   : 51.13                                                            \n",
-       " 3rd Qu.: 59.99                                                            \n",
-       " Max.   :359.95                                                            \n",
-       "                                                                           \n",
-       " prices.currency    prices.dateAdded   prices.dateSeen    prices.isSale  \n",
-       " Length:10000       Length:10000       Length:10000       Mode :logical  \n",
-       " Class :character   Class :character   Class :character   FALSE:9830     \n",
-       " Mode  :character   Mode  :character   Mode  :character   TRUE :170      \n",
-       "                                                                         \n",
-       "                                                                         \n",
-       "                                                                         \n",
-       "                                                                         \n",
-       " prices.merchant    prices.offer       prices.returnPolicy prices.shipping   \n",
-       " Length:10000       Length:10000       Mode:logical        Length:10000      \n",
-       " Class :character   Class :character   NA's:10000          Class :character  \n",
-       " Mode  :character   Mode  :character                       Mode  :character  \n",
-       "                                                                             \n",
-       "                                                                             \n",
-       "                                                                             \n",
-       "                                                                             \n",
-       " prices.size        prices.sourceURLs     sizes            sourceURLs       \n",
-       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
-       " Class :character   Class :character   Class :character   Class :character  \n",
-       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "                                                                            "
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    }
-   ],
-   "source": [
-    "summary(df1)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 13,
-   "id": "137e28f6",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:41.675484Z",
-     "iopub.status.busy": "2024-06-25T02:48:41.673948Z",
-     "iopub.status.idle": "2024-06-25T02:48:41.704036Z",
-     "shell.execute_reply": "2024-06-25T02:48:41.702366Z"
-    },
-    "papermill": {
-     "duration": 0.052672,
-     "end_time": "2024-06-25T02:48:41.706298",
-     "exception": false,
-     "start_time": "2024-06-25T02:48:41.653626",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "      id             dateAdded         dateUpdated           asins          \n",
-       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
-       " Class :character   Class :character   Class :character   Class :character  \n",
-       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "    brand            categories        primaryCategories     colors         \n",
-       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
-       " Class :character   Class :character   Class :character   Class :character  \n",
-       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "  dimension              ean             imageURLs             keys          \n",
-       " Length:10000       Min.   :1.010e+11   Length:10000       Length:10000      \n",
-       " Class :character   1st Qu.:7.090e+11   Class :character   Class :character  \n",
-       " Mode  :character   Median :8.290e+11   Mode  :character   Mode  :character  \n",
-       "                    Mean   :7.543e+11                                        \n",
-       "                    3rd Qu.:8.860e+11                                        \n",
-       "                    Max.   :9.560e+11                                        \n",
-       " manufacturer       manufacturerNumber     name           prices.amountMax \n",
-       " Length:10000       Length:10000       Length:10000       Min.   :   5.50  \n",
-       " Class :character   Class :character   Class :character   1st Qu.:  34.99  \n",
-       " Mode  :character   Mode  :character   Mode  :character   Median :  52.48  \n",
-       "                                                          Mean   :  72.20  \n",
-       "                                                          3rd Qu.:  83.96  \n",
-       "                                                          Max.   :5000.00  \n",
-       " prices.amountMin  prices.availability prices.color       prices.condition\n",
-       " Min.   :   5.50   Mode :logical       Length:10000       Mode:logical    \n",
-       " 1st Qu.:  34.99   FALSE:3731          Class :character   NA's:10000      \n",
-       " Median :  52.48   TRUE :6269          Mode  :character                   \n",
-       " Mean   :  72.20                                                          \n",
-       " 3rd Qu.:  83.96                                                          \n",
-       " Max.   :5000.00                                                          \n",
-       " prices.currency    prices.dateAdded prices.dateSeen    prices.isSale  \n",
-       " Length:10000       Mode:logical     Length:10000       Mode :logical  \n",
-       " Class :character   NA's:10000       Class :character   FALSE:1364     \n",
-       " Mode  :character                    Mode  :character   NA's :8636     \n",
-       "                                                                       \n",
-       "                                                                       \n",
-       "                                                                       \n",
-       " prices.merchant prices.offer       prices.returnPolicy prices.shipping   \n",
-       " Mode:logical    Length:10000       Mode:logical        Length:10000      \n",
-       " NA's:10000      Class :character   NA's:10000          Class :character  \n",
-       "                 Mode  :character                       Mode  :character  \n",
-       "                                                                          \n",
-       "                                                                          \n",
-       "                                                                          \n",
-       " prices.size        prices.sourceURLs     sizes            sourceURLs       \n",
-       " Length:10000       Length:10000       Length:10000       Length:10000      \n",
-       " Class :character   Class :character   Class :character   Class :character  \n",
-       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
-       "                                                                            \n",
-       "                                                                            \n",
-       "                                                                            "
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    }
-   ],
-   "source": [
-    "summary(df2)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 14,
-   "id": "6b5c74a4",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:41.746501Z",
-     "iopub.status.busy": "2024-06-25T02:48:41.744946Z",
-     "iopub.status.idle": "2024-06-25T02:48:42.164469Z",
-     "shell.execute_reply": "2024-06-25T02:48:42.162745Z"
-    },
-    "papermill": {
-     "duration": 0.442372,
-     "end_time": "2024-06-25T02:48:42.166928",
-     "exception": false,
-     "start_time": "2024-06-25T02:48:41.724556",
+     "start_time": "2024-06-25T04:05:24.577013",
      "status": "completed"
     },
     "tags": []
@@ -1699,20 +1511,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
-   "id": "1a0abbee",
+   "execution_count": 13,
+   "id": "c29f97ac",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:42.210991Z",
-     "iopub.status.busy": "2024-06-25T02:48:42.209443Z",
-     "iopub.status.idle": "2024-06-25T02:48:42.247948Z",
-     "shell.execute_reply": "2024-06-25T02:48:42.245584Z"
+     "iopub.execute_input": "2024-06-25T04:05:25.135799Z",
+     "iopub.status.busy": "2024-06-25T04:05:25.134087Z",
+     "iopub.status.idle": "2024-06-25T04:05:25.171877Z",
+     "shell.execute_reply": "2024-06-25T04:05:25.169284Z"
     },
     "papermill": {
-     "duration": 0.063018,
-     "end_time": "2024-06-25T02:48:42.250841",
+     "duration": 0.066765,
+     "end_time": "2024-06-25T04:05:25.175031",
      "exception": false,
-     "start_time": "2024-06-25T02:48:42.187823",
+     "start_time": "2024-06-25T04:05:25.108266",
      "status": "completed"
     },
     "tags": []
@@ -1824,20 +1636,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
-   "id": "0f698bdf",
+   "execution_count": 14,
+   "id": "c3fa0374",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:42.293636Z",
-     "iopub.status.busy": "2024-06-25T02:48:42.292074Z",
-     "iopub.status.idle": "2024-06-25T02:48:42.425497Z",
-     "shell.execute_reply": "2024-06-25T02:48:42.423025Z"
+     "iopub.execute_input": "2024-06-25T04:05:25.232941Z",
+     "iopub.status.busy": "2024-06-25T04:05:25.231157Z",
+     "iopub.status.idle": "2024-06-25T04:05:25.389764Z",
+     "shell.execute_reply": "2024-06-25T04:05:25.387731Z"
     },
     "papermill": {
-     "duration": 0.158048,
-     "end_time": "2024-06-25T02:48:42.428467",
+     "duration": 0.192467,
+     "end_time": "2024-06-25T04:05:25.392590",
      "exception": false,
-     "start_time": "2024-06-25T02:48:42.270419",
+     "start_time": "2024-06-25T04:05:25.200123",
      "status": "completed"
     },
     "tags": []
@@ -1908,20 +1720,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 17,
-   "id": "9af8297f",
+   "execution_count": 15,
+   "id": "148e3afc",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-25T02:48:42.472803Z",
-     "iopub.status.busy": "2024-06-25T02:48:42.471292Z",
-     "iopub.status.idle": "2024-06-25T02:48:42.599933Z",
-     "shell.execute_reply": "2024-06-25T02:48:42.597477Z"
+     "iopub.execute_input": "2024-06-25T04:05:25.451478Z",
+     "iopub.status.busy": "2024-06-25T04:05:25.449802Z",
+     "iopub.status.idle": "2024-06-25T04:05:25.586380Z",
+     "shell.execute_reply": "2024-06-25T04:05:25.584434Z"
     },
     "papermill": {
-     "duration": 0.154196,
-     "end_time": "2024-06-25T02:48:42.602959",
+     "duration": 0.167886,
+     "end_time": "2024-06-25T04:05:25.589650",
      "exception": false,
-     "start_time": "2024-06-25T02:48:42.448763",
+     "start_time": "2024-06-25T04:05:25.421764",
      "status": "completed"
     },
     "tags": []
@@ -1989,6 +1801,235 @@
     "\n",
     "head(df3,1)"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "748b0fa7",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-25T04:05:25.650269Z",
+     "iopub.status.busy": "2024-06-25T04:05:25.647495Z",
+     "iopub.status.idle": "2024-06-25T04:05:25.707937Z",
+     "shell.execute_reply": "2024-06-25T04:05:25.705095Z"
+    },
+    "papermill": {
+     "duration": 0.093274,
+     "end_time": "2024-06-25T04:05:25.712235",
+     "exception": false,
+     "start_time": "2024-06-25T04:05:25.618961",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "      id              dateAdded                    dateUpdated                 \n",
+       " Length:20000       Min.   :2015-04-01 00:00:00   Min.   :2018-01-01 00:00:00  \n",
+       " Class :character   1st Qu.:2017-11-10 00:00:00   1st Qu.:2018-02-01 00:00:00  \n",
+       " Mode  :character   Median :2017-11-20 00:00:00   Median :2018-12-28 00:00:00  \n",
+       "                    Mean   :2018-05-10 10:05:44   Mean   :2018-09-11 20:33:04  \n",
+       "                    3rd Qu.:2019-04-19 00:00:00   3rd Qu.:2019-04-19 00:00:00  \n",
+       "                    Max.   :2019-05-01 00:00:00   Max.   :2019-05-01 00:00:00  \n",
+       "                                                                               \n",
+       "    asins              brand            categories        primaryCategories \n",
+       " Length:20000       Length:20000       Length:20000       Length:20000      \n",
+       " Class :character   Class :character   Class :character   Class :character  \n",
+       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "    colors           dimension              ean             imageURLs        \n",
+       " Length:20000       Length:20000       Min.   :3.398e+10   Length:20000      \n",
+       " Class :character   Class :character   1st Qu.:7.220e+11   Class :character  \n",
+       " Mode  :character   Mode  :character   Median :8.290e+11   Mode  :character  \n",
+       "                                       Mean   :7.554e+11                     \n",
+       "                                       3rd Qu.:8.860e+11                     \n",
+       "                                       Max.   :9.560e+11                     \n",
+       "                                       NA's   :9329                          \n",
+       "     keys           manufacturer       manufacturerNumber     name          \n",
+       " Length:20000       Length:20000       Length:20000       Length:20000      \n",
+       " Class :character   Class :character   Class :character   Class :character  \n",
+       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       " prices.amountMax  prices.amountMin  prices.availability prices.color      \n",
+       " Min.   :   5.50   Min.   :   4.88   Length:20000        Length:20000      \n",
+       " 1st Qu.:  49.95   1st Qu.:  37.15   Class :character    Class :character  \n",
+       " Median :  59.99   Median :  49.99   Mode  :character    Mode  :character  \n",
+       " Mean   :  70.71   Mean   :  61.67                                         \n",
+       " 3rd Qu.:  79.99   3rd Qu.:  69.95                                         \n",
+       " Max.   :5000.00   Max.   :5000.00                                         \n",
+       "                                                                           \n",
+       " prices.condition   prices.currency    prices.dateAdded   prices.isSale  \n",
+       " Length:20000       Length:20000       Length:20000       Mode :logical  \n",
+       " Class :character   Class :character   Class :character   FALSE:11194    \n",
+       " Mode  :character   Mode  :character   Mode  :character   TRUE :170      \n",
+       "                                                          NA's :8636     \n",
+       "                                                                         \n",
+       "                                                                         \n",
+       "                                                                         \n",
+       " prices.merchant    prices.offer       prices.returnPolicy prices.shipping   \n",
+       " Length:20000       Length:20000       Mode:logical        Length:20000      \n",
+       " Class :character   Class :character   NA's:20000          Class :character  \n",
+       " Mode  :character   Mode  :character                       Mode  :character  \n",
+       "                                                                             \n",
+       "                                                                             \n",
+       "                                                                             \n",
+       "                                                                             \n",
+       " prices.size        prices.sourceURLs     sizes            sourceURLs       \n",
+       " Length:20000       Length:20000       Length:20000       Length:20000      \n",
+       " Class :character   Class :character   Class :character   Class :character  \n",
+       " Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            \n",
+       "                                                                            "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "summary(df3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "3da5d2e8",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-25T04:05:25.773226Z",
+     "iopub.status.busy": "2024-06-25T04:05:25.770594Z",
+     "iopub.status.idle": "2024-06-25T04:05:25.839117Z",
+     "shell.execute_reply": "2024-06-25T04:05:25.836269Z"
+    },
+    "papermill": {
+     "duration": 0.100411,
+     "end_time": "2024-06-25T04:05:25.842304",
+     "exception": false,
+     "start_time": "2024-06-25T04:05:25.741893",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<table class=\"dataframe\">\n",
+       "<caption>A data.frame: 2 × 31</caption>\n",
+       "<thead>\n",
+       "\t<tr><th></th><th scope=col>id</th><th scope=col>dateAdded</th><th scope=col>dateUpdated</th><th scope=col>asins</th><th scope=col>brand</th><th scope=col>categories</th><th scope=col>primaryCategories</th><th scope=col>colors</th><th scope=col>dimension</th><th scope=col>ean</th><th scope=col>⋯</th><th scope=col>prices.dateAdded</th><th scope=col>prices.isSale</th><th scope=col>prices.merchant</th><th scope=col>prices.offer</th><th scope=col>prices.returnPolicy</th><th scope=col>prices.shipping</th><th scope=col>prices.size</th><th scope=col>prices.sourceURLs</th><th scope=col>sizes</th><th scope=col>sourceURLs</th></tr>\n",
+       "\t<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dttm&gt;</th><th scope=col>&lt;dttm&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>⋯</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;lgl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th></tr>\n",
+       "</thead>\n",
+       "<tbody>\n",
+       "\t<tr><th scope=row>1:1</th><td>AVpfEf_hLJeJML431ueH</td><td>2015-05-04</td><td>2018-01-29</td><td></td><td>Naturalizer</td><td><span style=white-space:pre-wrap>Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals       </span></td><td>Shoes</td><td>Silver,Cream Watercolor Floral</td><td></td><td><span style=white-space:pre-wrap>         NA</span></td><td>⋯</td><td>2017-03-28T11:40:25Z</td><td>FALSE</td><td>Overstock.com</td><td></td><td>NA</td><td><span style=white-space:pre-wrap>        </span></td><td>S</td><td>https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html</td><td>6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W</td><td>https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245</td></tr>\n",
+       "\t<tr><th scope=row>1:2</th><td>AVpi74XfLJeJML43qZAc</td><td>2017-01-27</td><td>2018-01-03</td><td></td><td>MUK LUKS   </td><td>Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes</td><td>Shoes</td><td>Grey                          </td><td></td><td>33977045743</td><td>⋯</td><td>2018-01-03T05:21:54Z</td><td>TRUE </td><td>Walmart.com  </td><td></td><td>NA</td><td>Standard</td><td>6</td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                      </td><td>10,7,6,9,8                                                                                                                       </td><td>https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </td></tr>\n",
+       "</tbody>\n",
+       "</table>\n"
+      ],
+      "text/latex": [
+       "A data.frame: 2 × 31\n",
+       "\\begin{tabular}{r|lllllllllllllllllllll}\n",
+       "  & id & dateAdded & dateUpdated & asins & brand & categories & primaryCategories & colors & dimension & ean & ⋯ & prices.dateAdded & prices.isSale & prices.merchant & prices.offer & prices.returnPolicy & prices.shipping & prices.size & prices.sourceURLs & sizes & sourceURLs\\\\\n",
+       "  & <chr> & <dttm> & <dttm> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <dbl> & ⋯ & <chr> & <chr> & <chr> & <chr> & <lgl> & <chr> & <chr> & <chr> & <chr> & <chr>\\\\\n",
+       "\\hline\n",
+       "\t1:1 & AVpfEf\\_hLJeJML431ueH & 2015-05-04 & 2018-01-29 &  & Naturalizer & Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals        & Shoes & Silver,Cream Watercolor Floral &  &          NA & ⋯ & 2017-03-28T11:40:25Z & FALSE & Overstock.com &  & NA &          & S & https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html & 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W & https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI\\&searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2\\_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4\\&searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4\\&searchidx=4245\\\\\n",
+       "\t1:2 & AVpi74XfLJeJML43qZAc & 2017-01-27 & 2018-01-03 &  & MUK LUKS    & Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes & Shoes & Grey                           &  & 33977045743 & ⋯ & 2018-01-03T05:21:54Z & TRUE  & Walmart.com   &  & NA & Standard & 6 & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       & 10,7,6,9,8                                                                                                                        & https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\\\\n",
+       "\\end{tabular}\n"
+      ],
+      "text/markdown": [
+       "\n",
+       "A data.frame: 2 × 31\n",
+       "\n",
+       "| <!--/--> | id &lt;chr&gt; | dateAdded &lt;dttm&gt; | dateUpdated &lt;dttm&gt; | asins &lt;chr&gt; | brand &lt;chr&gt; | categories &lt;chr&gt; | primaryCategories &lt;chr&gt; | colors &lt;chr&gt; | dimension &lt;chr&gt; | ean &lt;dbl&gt; | ⋯ ⋯ | prices.dateAdded &lt;chr&gt; | prices.isSale &lt;chr&gt; | prices.merchant &lt;chr&gt; | prices.offer &lt;chr&gt; | prices.returnPolicy &lt;lgl&gt; | prices.shipping &lt;chr&gt; | prices.size &lt;chr&gt; | prices.sourceURLs &lt;chr&gt; | sizes &lt;chr&gt; | sourceURLs &lt;chr&gt; |\n",
+       "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n",
+       "| 1:1 | AVpfEf_hLJeJML431ueH | 2015-05-04 | 2018-01-29 | <!----> | Naturalizer | Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals        | Shoes | Silver,Cream Watercolor Floral | <!----> |          NA | ⋯ | 2017-03-28T11:40:25Z | FALSE | Overstock.com | <!----> | NA | <!----> | S | https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html | 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W | https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&amp;searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&amp;searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&amp;searchidx=4245 |\n",
+       "| 1:2 | AVpi74XfLJeJML43qZAc | 2017-01-27 | 2018-01-03 | <!----> | MUK LUKS    | Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes | Shoes | Grey                           | <!----> | 33977045743 | ⋯ | 2018-01-03T05:21:54Z | TRUE  | Walmart.com   | <!----> | NA | Standard | 6 | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                       | 10,7,6,9,8                                                                                                                        | https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |\n",
+       "\n"
+      ],
+      "text/plain": [
+       "    id                   dateAdded  dateUpdated asins brand      \n",
+       "1:1 AVpfEf_hLJeJML431ueH 2015-05-04 2018-01-29        Naturalizer\n",
+       "1:2 AVpi74XfLJeJML43qZAc 2017-01-27 2018-01-03        MUK LUKS   \n",
+       "    categories                                                         \n",
+       "1:1 Clothing,Shoes,Women's Shoes,All Women's Shoes,Heels,Sandals       \n",
+       "1:2 Clothing,Shoes,Women's Shoes,Women's Casual Shoes,All Women's Shoes\n",
+       "    primaryCategories colors                         dimension ean         ⋯\n",
+       "1:1 Shoes             Silver,Cream Watercolor Floral                    NA ⋯\n",
+       "1:2 Shoes             Grey                                     33977045743 ⋯\n",
+       "    prices.dateAdded     prices.isSale prices.merchant prices.offer\n",
+       "1:1 2017-03-28T11:40:25Z FALSE         Overstock.com               \n",
+       "1:2 2018-01-03T05:21:54Z TRUE          Walmart.com                 \n",
+       "    prices.returnPolicy prices.shipping prices.size\n",
+       "1:1 NA                                  S          \n",
+       "1:2 NA                  Standard        6          \n",
+       "    prices.sourceURLs                                                                                                                                                                                                                            \n",
+       "1:1 https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html\n",
+       "1:2 https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                      \n",
+       "    sizes                                                                                                                            \n",
+       "1:1 6W,9W,7.5W,12W,8.5M,9N,9M,9.5M,10.5M,10W,8.5W,7M,7.5M,7N,9.5W,10N,10M,5M,12M,5.5M,8W,11W,8N,8M,4.5M,6.5M,6M,11M,6N,11N,6.5W,4M,7W\n",
+       "1:2 10,7,6,9,8                                                                                                                       \n",
+       "    sourceURLs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \n",
+       "1:1 https://www.walmart.com/ip/Naturalizer-Danya-Women-N-S-Open-Toe-Synthetic-Silver-Sandals/136041884,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Soft-Silver-Crosshatch-Shiny-Patent/8925023/product.html?refccid=O7POPZJCH6AJFPCMWNSBVDYJGI&searchidx=6749,https://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html,http://www.shoes.com/womens-naturalizer-danya-soft-silver-crosshatch-shiny-p2_id332635,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=JEHJMDO4H2ZK5FKIT6XGVPS7B4&searchidx=4871,http://www.overstock.com/Clothing-Shoes/Womens-Naturalizer-Danya-Silver-Crosshatch-Patent-PU/9291843/product.html?refccid=Y6DKPF6YL5DIRFCPAK7JMVETL4&searchidx=4245\n",
+       "1:2 https://www.walmart.com/ip/MUK-LUKS-Womens-Jane-Suede-Moccasin/41271362                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "df3$prices.isSale <- ifelse(df3$prices.isSale %in% c(NA), \"FALSE\", df3$prices.isSale)\n",
+    "head(df3,2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "6ed827e5",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-25T04:05:25.900641Z",
+     "iopub.status.busy": "2024-06-25T04:05:25.898793Z",
+     "iopub.status.idle": "2024-06-25T04:05:25.924054Z",
+     "shell.execute_reply": "2024-06-25T04:05:25.921475Z"
+    },
+    "papermill": {
+     "duration": 0.058614,
+     "end_time": "2024-06-25T04:05:25.927377",
+     "exception": false,
+     "start_time": "2024-06-25T04:05:25.868763",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "FALSE  TRUE \n",
+      "19830   170 \n"
+     ]
+    }
+   ],
+   "source": [
+    "##Look at frequency counts of ratings\n",
+    "\n",
+    "freqrat <- table(df3$prices.isSale)\n",
+    "\n",
+    "print(freqrat)"
+   ]
   }
  ],
  "metadata": {
@@ -2022,14 +2063,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 12.292792,
-   "end_time": "2024-06-25T02:48:42.745843",
+   "duration": 14.655637,
+   "end_time": "2024-06-25T04:05:26.077214",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-06-25T02:48:30.453051",
+   "start_time": "2024-06-25T04:05:11.421577",
    "version": "2.5.0"
   }
  },
