@@ -1,0 +1,51 @@
+---
+title: "Space Time Boxes"
+author: "Dawn Daras MS, ABD/PhD"
+date: "`r Sys.Date()`"
+output: 
+    html_document:
+        html_document:
+        css: minty.css
+        code_folding: hide
+    
+---
+
+<style type="text/css">
+  body{
+  font-size: 12pt;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+![https://dawn-daras.com](Dawn.png)
+
+#Space-Time Boxes Using R
+
+##Space-Time Boxes are an extension of Geohashed spatial locations. More specifically, an STB is an alphanumeric string that represents a regularly shaped region of space and time.
+
+```{r}
+##installing the library for correlation, ggcorrplot for visualization and FactoMineR for the PCA
+install.packages("geohashTools")
+install.packages("sf")
+install.packages("ggplot2")
+install.packages("dplyr")
+install.packages("repr")
+install.packages("tidyr")
+```
+
+##Calling the libraries we just installed
+
+##Calling the libraries we need for the Space-Time Box Analysis
+
+```{r}
+library(geohashTools)
+library(sf)
+library(ggplot2)
+library(dplyr)
+library(repr)
+library(tidyr)
+```
