@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-![https://dawn-daras.com](Dawn.png)
+![https://sites.google.com/view/dawndaras/](Dawn.png)
 
 #Space-Time Boxes Using R
 
@@ -55,3 +55,17 @@ library(tidyr)
 df <- read.csv("/kaggle/input/lyftdata/other-Lyft_B02510.csv")
 head(df,5)
 ```
+
+##Counting our dataframe
+
+```{r}
+count(df)
+```
+
+##Removing a variable because it is empty
+```{r}
+df <- df[,-4]
+head(df,5)
+```
+
+
