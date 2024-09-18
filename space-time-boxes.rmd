@@ -29,12 +29,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 ##installing the library for correlation, ggcorrplot for visualization and FactoMineR for the PCA
-install.packages("geohashTools")
-install.packages("sf")
-install.packages("ggplot2")
-install.packages("dplyr")
-install.packages("repr")
-install.packages("tidyr")
+#install.packages("geohashTools")
+#install.packages("sf")
+#install.packages("ggplot2")
+#install.packages("dplyr")
+#install.packages("repr")
+#install.packages("tidyr")
 ```
 
 ##Calling the libraries we just installed
@@ -48,4 +48,10 @@ library(ggplot2)
 library(dplyr)
 library(repr)
 library(tidyr)
+```
+
+##Bringing in our data
+```{r}
+df <- read.csv("/kaggle/input/lyftdata/other-Lyft_B02510.csv")
+head(df,5)
 ```
