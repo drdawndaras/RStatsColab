@@ -68,4 +68,14 @@ df <- df[,-4]
 head(df,5)
 ```
 
+##Renaming columns
+```{r}
+library(dplyr)
+df2 <- df %>% rename(Time = time_of_trip, Lat = start_lat, Long = start_lng)
+```
 
+```{r}
+#checking to see if there are any missing
+colSums(is.na(df2))
+count(df2)
+```
