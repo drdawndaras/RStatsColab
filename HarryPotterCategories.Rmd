@@ -1,0 +1,530 @@
+---
+title: "Harry Potter Nonparametric Data Analysis"
+author: "Dawn Daras, MS, ABD/Ph.D."
+date: "`r Sys.Date()`"
+output: 
+    html_document:
+        html_document:
+        css: bootstrappink.css
+        
+---
+
+<style type="text/css">
+  body{
+  font-size: 12pt;
+}
+</style>
+
+```{r, message= FALSE, warning=FALSE}
+
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+
+
+
+<style type="text/css">
+  body{
+  font-size: 12pt;
+}
+</style>
+
+
+![https://dawn-daras.com](Dawn.png)
+
+```{r, message= FALSE, warning=FALSE}
+
+knitr::include_graphics("HP.gif")
+
+```
+
+
+## We will be working with a largely categorical dataset - Harry Potter.  So, the analysis and tables will be simple and focus on presentation
+
+<br>
+
+![Description of the Variables in the Harry Potter Dataset](datanames.png)
+<br>
+## You can find the downloadable dataset at this link: 
+[Harry Potter Dataset](https://github.com/drdawndaras/RStatsColab/blob/main/HPExport.csv)
+
+<br>
+<br>
+
+## Our Roadmap will be:
+<br>
+
+### 1) Bring in the data
+### 2) Run our Exploratory Data Analysis
+### 3) Clean the data and make changes so we can create good visualizations and analyses
+### 4) Create visualizations and tables
+### 5) Run some non parametric analyses on our categorical data
+
+<br>
+<br>
+
+## What is a non-parametric test?  
+
+<br>
+
+## Well, most statistics classes focus on parametric tests, which are based on the assumptions of the normal distribution and that the sample size is sufficiently large to produce a valid result.
+
+## A statistical method is called non-parametric if it makes no assumption on the population distribution or sample size.
+
+## This is in contrast with most parametric methods in elementary statistics that assume the data is quantitative, the population has a normal distribution and the sample size is sufficiently large.
+
+## In general, conclusions drawn from non-parametric methods are not as powerful as the parametric ones. Non-parametric tests are statistical assessments that can be used to analyze categorical data and data that are not normally distributed.We are going to use them here, because besides having a small sample the majority of our data is categorical.
+
+## For every parametric test, its non-parametric cousin can be used when the assumptions cannot be fulfilled for the parametric test.
+<br>
+
+![PARAMETRIC vs NONPARAMETRIC Tests](nonparametric.png)
+
+
+
+
+```{r, message= FALSE, warning=FALSE}
+library(devtools)
+library(gtsummary)
+library(ggplot2)
+library(magick)
+library(gmodels)
+library(plyr)
+library(dplyr)
+library(DT)
+library(tidyverse)
+library(rmarkdown)
+library(dplyr)
+library(magrittr)
+library(htmltools)
+library(vembedr)
+library(ggpubr)
+
+```
+
+
+
+```{r, message= FALSE, warning=FALSE}
+
+library(ggplot2)
+library(tibble)
+library(rstatix)
+library(formattable)
+library(data.table)
+library(table1)
+library(factoextra)
+```
+
+
+### Bringing in our data
+
+```{r, message= FALSE, warning=FALSE}
+
+HarryPotter <- read.csv("/cloud/project/HPExport.csv", header=TRUE, stringsAsFactors=FALSE)
+head(HarryPotter ,5)
+
+```
+
+
+### Let's look at datatypes and see if we need to make any changes
+
+```{r, message= FALSE, warning=FALSE}
+
+str(HarryPotter)
+```
+
+### Dropping some variables that we won't need for tables or analysis:
+```{r, message= FALSE, warning=FALSE}
+
+HarryPotter <- subset(HarryPotter, select = -c(Name, Birthdate, Deathdate.or.Censor, Days))
+```
+
+
+
+## Changing Age to Numeric
+
+```{r, message= FALSE, warning=FALSE}
+
+HarryPotter$Age <- as.integer(HarryPotter$Age)
+```
+
+
+
+```{r, message= FALSE, warning=FALSE}
+
+str(HarryPotter)
+```
+
+
+
+
+### Removing any rows with "NA's"
+```{r, message= FALSE, warning=FALSE}
+
+
+HarryPotter <- na.omit(HarryPotter)
+
+```
+
+
+
+```{r, message= FALSE, warning=FALSE}
+
+HarryPotter2 <- HarryPotter[HarryPotter$Age >= 5, ]
+```
+
+
+
+```{r, message= FALSE, warning=FALSE}
+
+summary(HarryPotter2$Age)
+```
+
+
+### Running a quick EDA's (exploratory data analysis)
+```{r, message= FALSE, warning=FALSE}
+
+str(HarryPotter2)
+```
+
+
+```{r, message= FALSE, warning=FALSE}
+
+summary(HarryPotter2)
+```
+
+
+
+
+### Removing Beaubatons Academy of Magic and Durmstrang because they're outliers
+
+```{r, message= FALSE, warning=FALSE}
+
+HPHouse=HarryPotter2[!grepl("Beauxbatons Academy of Magic",HarryPotter2$House),]
+
+head(HPHouse,5)
+```
+
+
+```{r, message= FALSE, warning=FALSE}
+
+HPHouse=HPHouse[!grepl("Durmstrang Institute",HPHouse$House),]
+```
+
+
+### Checking the changes we just made
+```{r, message= FALSE, warning=FALSE}
+
+
+print(freq_table(HPHouse$House))
+```
+
+
+### Removing where Loyal is unknown
+```{r, message= FALSE, warning=FALSE}
+
+HPHouse=HPHouse[!grepl("Unknown",HPHouse$Loyalty),]
+head(HPHouse,2)
+```
+
+
+
+```{r, message= FALSE, warning=FALSE}
+
+print(freq_table(HPHouse$Loyalty))
+```
+
+
+
+### Barplot of Houses
+
+```{r, message= FALSE, warning=FALSE}
+
+counts <- sort(table(HPHouse$House), decreasing = TRUE)  
+# Number of states in each region
+percentages <- 100 * counts / length(HPHouse$House)
+
+```
+
+
+
+```{r, message= FALSE, warning=FALSE}
+
+barplot(percentages, ylab = "Percentage", col = "purple")
+text(x=seq(0.7, 5, 1.2), 2, paste("n=", counts))      
+
+```
+
+
+### Changing Houses to Factors
+```{r, message= FALSE, warning=FALSE}
+
+HPHouse$House <- as.factor(HPHouse$House)
+levels(HPHouse$House)[levels(HPHouse$House) == "Gryffindor"] <- "Gryffindor"
+levels(HPHouse$House)[levels(HPHouse$House) == "Hufflepuff"] <- "Hufflepuff"
+levels(HPHouse$House)[levels(HPHouse$House) == "Slytherin"] <- "Slytherin"
+levels(HPHouse$House)[levels(HPHouse$House) == "Ravenclaw"] <- "Ravenclaw"
+str(HPHouse$House)
+```
+
+
+### Blood status freq counts
+
+```{r, message= FALSE, warning=FALSE}
+
+
+print(freq_table(HPHouse$Blood.status))
+```
+
+
+
+### Changing Blood Status to Factors
+```{r, message= FALSE, warning=FALSE}
+
+HPHouse$Blood.status <- as.factor(HPHouse$Blood.status)
+levels(HPHouse$Blood.status)[levels(HPHouse$Blood.status) == "Half-blood"] <- "Half-blood"
+levels(HPHouse$Blood.status)[levels(HPHouse$Blood.status) == "Muggle-born"] <- "Muggle-born"
+levels(HPHouse$Blood.status)[levels(HPHouse$Blood.status) == "Part-Goblin"] <- "Part-Goblin"
+levels(HPHouse$Blood.status)[levels(HPHouse$Blood.status) == "Pure-blood"] <- "Pure-blood"
+levels(HPHouse$Blood.status)[levels(HPHouse$Blood.status) == "Unknown"] <- "Unknown"
+str(HPHouse$Blood.status)
+```
+
+
+```{r, message= FALSE, warning=FALSE}
+
+lbls <- c( "<5", "6-10", "11-15", "16-20", "21-30","31-40","41-55","56-75","76-100","101-1600" )
+HPHouse$Age_Cat <- cut( HPHouse$Age, breaks = c( -Inf, 6, 11, 16, 21, 31, 41,56,76,101, Inf ), labels = lbls, right = FALSE )
+
+head(HPHouse,5)
+```
+
+
+### Changing Age_Cat into ordinal data
+### Ordinal data is when the order of the categories matters, not just the categories themselves in analysis
+```{r, message= FALSE, warning=FALSE}
+
+factor(HPHouse$Age_Cat, ordered = TRUE)
+```
+
+
+
+### Changing Loyalty to Factors
+```{r, message= FALSE, warning=FALSE}
+
+HPHouse$Loyalty <- as.factor(HPHouse$Loyalty)
+levels(HPHouse$Loyalty)[levels(HPHouse$Loyalty) == "Dumbledore"] <- "Dumbledore"
+levels(HPHouse$Loyalty)[levels(HPHouse$Loyalty) == "Voldemort"] <- "Voldemort"
+str(HPHouse$Loyalty)
+```
+
+### Checking datatypes after our changes
+
+```{r, message= FALSE, warning=FALSE}
+
+str(HPHouse)
+```
+
+
+
+```{r, message= FALSE, warning=FALSE}
+
+print(freq_table(HPHouse$Sex))
+```
+
+
+
+```{r, message= FALSE, warning=FALSE}
+
+print(freq_table(HPHouse$Age_Cat))
+```
+
+
+### Removing observation where Sex is blank
+```{r, message= FALSE, warning=FALSE}
+
+HPHouse <- HPHouse[-which(HPHouse$Sex == ""), ]
+
+```
+
+
+```{r, message= FALSE, warning=FALSE}
+
+print(freq_table(HPHouse$Sex))
+```
+ 
+
+### Building a Custom Table of Frequency Counts by Loyalty, Age Category and Status (Alive by the End of the Series or Died)
+```{r, message= FALSE, warning=FALSE}
+
+LoyaltyAge <- HPHouse %>%
+  group_by(Loyalty, House, Status) %>%
+  tally()
+```
+
+<br> 
+
+```{r, message= FALSE, warning=FALSE}
+
+head(LoyaltyAge,5)
+```
+
+
+```{r, message= FALSE, warning=FALSE}
+
+#Rename columns 
+colnames(LoyaltyAge)[1] <- "Loyalty" 
+colnames(LoyaltyAge)[2] <-"House"
+colnames(LoyaltyAge)[3] <- "Status"              
+colnames(LoyaltyAge)[4] <- "Count"
+head(LoyaltyAge, 5)
+```
+
+
+
+```{r, message= FALSE, warning=FALSE}
+
+datatable(LoyaltyAge,extensions = 'Buttons',
+options = list(dom='Bfrtip',
+buttons=c('copy', 'csv', 'excel', 'print', 'pdf')))
+```
+ 
+
+<br>
+
+## Non-Parametric Tests
+
+### We are going to conduct two non parametric statistical tests - if you look at the chart at the beginning - the first we will be conducting is the Mann-Whitney U.  This is the non parametric test analogous to the Unpaired T-Test.  It compares the medians of two independent samples.  
+
+### Our H0 (Null Hypothesis) is that Loyalty to Voldemort and Loyalty to Dumbledore are identitical (ages of death in Potterworld) populations
+
+### Our HA (Alternative Hypothesis) is that Loyalty to Voldemort and Loyalty to Dumbledore are non identical populations
+
+
+<br>
+
+
+### We will be examining the variables Age and Loyalty
+
+
+<br>
+
+### First we will examine the median scores by each loyalty group and create boxplots
+
+```{r, message= FALSE, warning=FALSE}
+
+# loading the package
+group_by(HPHouse,Loyalty) %>%
+  summarise(
+    count = n(),
+    median = median(Age, na.rm = TRUE),
+    IQR = IQR(Age, na.rm = TRUE))
+```
+
+
+
+```{r, message= FALSE, warning=FALSE}
+
+ggboxplot(HPHouse, x = "Loyalty", y = "Age", 
+          color = "Loyalty", palette = c("purple","hotpink"),
+          ylab = "Age", xlab = "Loyalty")
+```
+
+
+### Next we will conduct the Mann Whitney U Test
+```{r, message= FALSE, warning=FALSE}
+
+res <- wilcox.test(Age ~ Loyalty, conf.int = T, data = HPHouse)
+res 
+
+```
+
+
+
+
+### From the p value being less than .05, we can reject the null hypothesis and accept the alternative that loyalty to Voldemort and Loyalty to Dumbledore are non identical populations when it comes to age (or age of death in PotterWorld)
+
+<br>
+
+### Next we are going to conduct the Kruskal-Wallis.  The Kruskal Wallis is the rank-based, non parametric cousin to the ANOVA (analysis of variance).  Remember how we created ranking and factoring for the difference categorical variables above? 
+
+### We consider the variable Age. We wish to compare the Age in four different Hogwarts Houses (Gryffindor, Hufflepuff, Ravenclaw, and Slytherin).
+
+### HO: the distribution of Age is the same in all groups (the medians of Age in the four Houses are the same)
+### HA: there is at least one group with Age distribution different from the others (there is at least one House with median Age different from the others)
+
+```{r, message= FALSE, warning=FALSE}
+library(doBy)
+library(rstatix)
+library(gtsummary)
+library(tidyverse)
+```
+
+<br>
+
+```{r, message= FALSE, warning=FALSE}
+summaryBy(Age ~ House,
+  data = HPHouse,
+  FUN = median,
+  na.rm = TRUE
+)
+```
+
+
+### Boxplot by House
+
+```{r, message= FALSE, warning=FALSE}
+
+ggplot(HPHouse) +
+  aes(x = House, y = Age, fill = House) +
+  geom_boxplot() +
+  theme(legend.position = "none")
+
+```
+
+
+### Kruskal Wallace Test
+```{r, message= FALSE, warning=FALSE}
+
+kruskal.test(Age ~ House, data = HPHouse)
+
+```
+
+### Given the p is less than .05 we can reject the null and accept the HA that there are differences in ages at death among at least one of the Houses.
+
+
+### To see which groups differ between each other, we can conduct the Pairwise comparisons using Wilcoxon rank sum test 
+```{r, message= FALSE, warning=FALSE}
+pairwise.wilcox.test(HPHouse$Age, HPHouse$House,
+                 p.adjust.method = "BH")
+```
+
+### After we conduct this test we see that Gryffindor differs signficantly from Ravenclaw, and Gryffindor differs signifcantly from Slytherin.
+
+
+
+
+<br>
+
+
+## References
+
+### Bougioukas, K. (2024). Practical Statistics in Medicine with R. [Rstats Textbook](https://practical-stats-med-r.netlify.app/)
+
+### University of Wisconsin, at Madison (2024). Categorical Data Wrangling with R. [Categorical Data](https://sscc.wisc.edu/sscc/pubs/dwr/categorical.html)
+
+<br>
+
+
+```{r, message= FALSE, warning=FALSE}
+embed_url("https://youtu.be/dxKLEOMfUL4?si=JSwO4RvGaRVF4_sb")
+```
+
+
+<br>
+<br>
+
+
+
+
+
